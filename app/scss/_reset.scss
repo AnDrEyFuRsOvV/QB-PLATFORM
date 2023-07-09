@@ -10,7 +10,13 @@ html{
 
 ul[class],
 ol[class] {
+  text-decoration: none;
+  list-style-type: none;
+}
+ul{
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body,
@@ -34,11 +40,6 @@ dd {
 
 ul[class] {
   list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 input,

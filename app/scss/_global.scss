@@ -1,28 +1,84 @@
 html,
 body {
 	height: 100%;
+	font-family: 'Montserrat', sans-serif;
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 }
-
 .main {
 	flex: 1 0 auto;
 }
 .footer {
 	flex: 0 0 auto;
 }
-
 .container{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
+.container-fluid{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.select {
+	height: 20px;
+	width: 45px;
+}
+.select__header {
+	display: flex;
+	max-width: 45px;
+	position: relative;
+	cursor: pointer;
+}
+.select__curent {
+	padding-left: 4px;
+	@include text-style($white-color, 16px, 20px, 600);
+}
+.select__icon {
+	transform: rotate(0);
+	transition: all .3s;
+	margin-top: -2px;
+	margin-left: 5px;
+}
+.select__body {
+	background: $white-gray;
+	box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	padding: 5px;
+	text-align: center;
+	display: none;
+	@include text-style($white-color, 16px, 20px, 600);
+}
+.select__item {
+	padding: 5px 5px 0 5px;
+	font-size: 16px;
+	line-height: 20px;
+	color: $dark-color;
+	cursor: pointer;
+	&:last-child{
+		padding-bottom: 5px;
+	}
+}
+.select.active .select__body {
+	display: block;
+}
+
+.select.active .select__icon {
+	transform: rotate(180deg);
+}
+.select.mobile{
+	display: none;
+}
+
+.slick-slide {
+    margin-right: 20px;
+}
 
 
-
-
-
+.component{
+	max-width: 1920px;
+	margin: 0 auto;
+}

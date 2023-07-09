@@ -1,0 +1,56 @@
+// Colors
+$dark-color: #000000;
+$white-color: #ffffff;
+$white-gray: #F3F3F3;
+$orange-color: #FF5100;
+$hover-btn-standart: #ED5108 ;
+$active-btn-standart: #A73804;
+$hover-btn-white: #FEB897; 
+$gray-color: #898989;
+$gray-2: #929292;
+// Colors
+
+//Mixin
+@mixin text-style($color, $size, $line-h, $weight) {
+  font-family: Montserrat, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-h;
+  color: $color;
+}
+
+@mixin standart-btn{
+    @include text-style($white-color, 16px, 20px, 700);
+    border-radius: 10px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: $orange-color;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        color: $white-color;
+        background-color: $hover-btn-standart;
+    }
+    &:active{ 
+        background-color: $active-btn-standart;
+    }
+}
+
+//Mixin
+
+.standart-btn{
+    @include text-style($white-color, 16px, 20px, 700);
+    border-radius: 10px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: $orange-color;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        color: $white-color;
+        background-color: $hover-btn-standart;
+    }
+    &:active{ 
+        background-color: $active-btn-standart;
+    }
+}
