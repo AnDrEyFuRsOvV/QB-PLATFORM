@@ -232,6 +232,9 @@
 }
 
 @media(max-width: 950px){
+    .top.top__qr-code .top__inner{
+        padding-top: 95px;
+    }
     .top.qr-boss .top__title{
         margin-bottom: 15px;
     }
@@ -1005,11 +1008,21 @@
 }
 
 @media(max-width: 950px){
+    .opportunities.revers .opportunities__item:first-child{
+        margin-left: 0;
+    }
+    .opportunities__main-btn{
+        display: none;
+    }
+    .opportunities__main-btn.mobile{
+        display: block;
+        margin-top: 20px;
+    }
     .opportunities{
         margin-bottom: 50px;
     }
     .opportunities__items{
-        flex-direction: column;
+        flex-direction: column!important;
     }
     .opportunities__item{
         &:first-child{
@@ -1104,3 +1117,83 @@
 }
 
 //STYLES FOR QR-CODE
+
+//STYLES FOR INTEGRATIONS
+@media(max-width: 600px){
+    .integrations__title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .integrations{
+        margin-top: 50px;
+        margin-bottom: 45px;
+    }
+}
+
+
+
+@media(max-width: 450px){
+    .integrations__inner{
+        grid-gap: 8px;
+    }
+    .integrations__item {
+        width: 100%;
+        max-width: 370px;
+        & img{
+            width: 100%;
+            height: auto;
+            max-width: 370px;
+            max-height: 370px;
+            box-shadow: 0px 8.55128px 9.73077px rgba(85, 105, 107, 0.1);
+            border-radius: 17.6923px;
+        }
+    }
+}
+//STYLES FOR INTEGRATIONS
+
+//STYLES FOR DOWNOLOAD
+@media(max-width: 1170px){
+    .downoload__inner{
+        padding: 0 30px;
+    }
+    .downoload__content{
+        margin-left: 15px;
+    }
+}
+
+@media(max-width: 1000px){
+    section.downoload{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .downoload__inner{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 15px 15px 0 15px;
+    }
+    .downoload__img img{
+        margin-top: 0;
+        margin-bottom: -3px;
+    }
+}
+
+@media(max-width: 700px){
+    .downoload__content{
+        margin-left: 0;
+        width: 100%;
+    }
+    .downoload__title{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .downoload__descr{
+        font-size: 16px;
+        line-height: 169.4%;
+    }
+    .downoload__img img{
+        width: 100%;
+        padding: 0 25px;
+        margin-top: 15px;
+    }
+}
+//STYLES FOR DOWNOLOAD

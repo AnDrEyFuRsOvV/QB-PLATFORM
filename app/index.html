@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="/build/css/intlTelInput.css">
   <link rel="stylesheet" href="/css/style.min.css">
 </head>
 
@@ -334,7 +335,7 @@
                     управління і збільшення продажів, удосконалення маркетингу та ефективної комунікаціїї з клієнтами
                   </p>
                   <form class="top__form">
-                    <input type="text" class="top__input" placeholder="(ХХ) ХХХ-ХХ-ХХ">
+                    <input type="tel" id="phone" class="top__input" placeholder="(ХХ) ХХХ-ХХ-ХХ">
                     <button class="standart-btn top__btn">Спробувати</button>
                   </form>
                   <p class="top__form-descr">Ми зв'яжемося з вами за декілька хвилин</p>
@@ -344,7 +345,7 @@
                 <img class="top__img" src="/images/top/index.png" alt="">
               </div>
               <form class="top__form mobile">
-                <input type="text" class="top__input" placeholder="(ХХ) ХХХ-ХХ-ХХ">
+                <input type="tel" id="phone" class="top__input" placeholder="(ХХ) ХХХ-ХХ-ХХ">
                 <button class="standart-btn top__btn">Спробувати</button>
                 <p class="top__form-descr mobile">Ми зв'яжемося з вами за декілька хвилин</p>
               </form>
@@ -675,6 +676,26 @@
 
 
   <script src="/js/main.min.js"></script>
+  <script src="/build/js/intlTelInput.js"></script>
+  <script>
+    var input = document.querySelector('#phone');
+    window.intlTelInput(input, {
+      initialCountry: "ua"
+    })
+
+
+    var element = document.querySelector(".iti__selected-flag");
+
+    element.addEventListener("mouseenter", function () {
+      event.stopPropagation()
+      element.classList.add("hover-effect");
+
+    });
+
+    element.addEventListener("mouseleave", function () {
+      element.classList.remove("hover-effect");
+    });
+  </script>
 </body>
 
 </html>

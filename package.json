@@ -17,6 +17,7 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "5.1.0",
     "gulp-uglify-es": "3.0.0",
+    "intl-tel-input": "^18.1.8",
     "jquery": "^3.6.3",
     "sass": "^1.57.1",
     "slick-carousel": "^1.8.1"
