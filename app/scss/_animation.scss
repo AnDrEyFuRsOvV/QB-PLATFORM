@@ -1,0 +1,409 @@
+// .select.active .select__body{
+//     transform: translateY(0);
+// }
+
+
+// .container-fluid.element-animation{
+//     visibility: hidden;
+//     opacity: 0;
+//     transform: translateY(-50%);
+// }
+
+// .header__container.element-animation{
+//     visibility: hidden;
+//     opacity: 0;
+//     transform: translateY(-20%);
+// }
+
+// .top__title.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(20%);
+// }
+
+// .top__subtitle.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30%);
+// }
+
+// .top__description.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30%);
+// }
+
+// .top__form.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30%);
+// }
+// .top__form-descr.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30px);
+// }
+
+// .top__img.element-animation{
+//     transform: translateX(10%);
+//     opacity: 0;
+//     visibility: visible;
+// }
+
+// .container-fluid.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transition: .7s;
+//     transform: translateY(0);
+// }
+
+// .header__container.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transition: .7s;
+//     transform: translateY(0);
+// }
+
+// .top__title.element-show{
+//     opacity: 1;
+//     transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__subtitle.element-show{
+//      opacity: 1;
+//      transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__description.element-show{
+//      opacity: 1;
+//      transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__form.element-show{
+//     opacity: 1;
+//     transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+// .top__form-descr.element-show{
+//      opacity: 1;
+//     transition: 1s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__img.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transition: 1s;
+//     transform: translateX(0);
+// }
+
+
+
+// .cards__title.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(15%);
+// }
+
+// .cards__card.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+
+// .cards__title.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateY(0);
+//     transition: .5s;
+// }
+
+// .cards__card.element-show{
+//         opacity: 1;
+//         visibility: visible;
+//         transition: 2s;
+// }
+
+
+// .partners.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(15%);
+// }
+// .contact.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(15%);
+// }
+
+// .partners.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateY(0);
+//     transition: 1s;
+// }
+// .contact.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateY(0);
+//     transition: 1s;
+// }
+
+
+
+// .preloader__logoqb{
+//     max-width: 375px;
+//     width: 100%;
+
+// }
+
+// .preloader {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #fff;
+//     z-index: 9999;
+//     opacity: 1;
+//     visibility:  visible;
+//     transition: all .1s;
+//     &.done{
+//         // opacity: 0;
+//         // visibility: hidden;
+//     }
+// }
+// .preloader__content {
+//     min-width: 375px;
+//     padding: 0 15px;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .preloader__svg{
+//     position: relative;
+//     width: 163px;
+//     height: 163px;
+// }
+
+// .svg-1{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// .svg-2{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// .svg-3{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+// .logo {
+//     width: 300px;
+//     margin-bottom: 20px;
+// }
+// .preloader__percent {
+//     margin-bottom: 12px;
+//     @include text-style($orange-color, 34px, 41px, 700);
+// }
+// .percentt {
+//     margin-left: 5px;
+//     @include text-style($orange-color, 34px, 41px, 700);
+//     margin-bottom: 23px;
+// }
+// .preloader__lines {
+//     border-radius: 1000px;
+//     background-color: $grayw;
+//     width: 400px;
+//     height: 13px;
+//     position: relative;
+// }
+// .preloader__lines.percent {
+//     background-color: $orange-color;
+//     width: 40px;
+//     height: 13px;
+//     position: absolute;
+// }
+// .preloader__title{
+//     @include text-style($orange-color, 34px, 41px, 700);
+//     text-transform: uppercase;
+// }
+
+
+// .preloader__box{
+//     display: flex;
+//     align-items: center;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show");
+//     } else {
+//       // change.target.classList.remove("element-show");
+//     }
+//   });
+// }
+
+// let options = {
+//   threshold: [0.5],
+// };
+// let observer = new IntersectionObserver(onEntry, options);
+// let elements = document.querySelectorAll(".element-animation");
+
+// for (let elm of elements) {
+//   observer.observe(elm);
+// }
+
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show-2");
+//     } else {
+//       // change.target.classList.remove("element-show");
+//     }
+//   });
+// }
+
+// let optionsS = {
+//   threshold: [0.7],
+// };
+// let observerR = new IntersectionObserver(onEntry, optionsS);
+// let elementsS = document.querySelectorAll(".element-animation-2");
+
+// for (let elm of elementsS) {
+//   observerR.observe(elm);
+// }
+
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show");
+//     } else {
+//       // change.target.classList.remove("element-show");
+//     }
+//   });
+// }
+
+// let options = {
+//   threshold: [0.5],
+// };
+// let observer = new IntersectionObserver(onEntry, options);
+// let elements = document.querySelectorAll(".element-animation");
+
+// for (let elm of elements) {
+//   observer.observe(elm);
+// }
+
+// let images = document.images;
+// let images_total_count = images.length;
+// let images_loaded_count = 0;
+// let preloader = document.getElementById("page-preloader");
+
+// for (let i = 0; i < images_total_count; i++) {
+//   let image_clone = new Image();
+//   image_clone.onload = image_loaded;
+//   image_clone.onerror = image_loaded;
+//   image_clone.src = images[i].src;
+// }
+
+// function image_loaded() {
+//   images_loaded_count++;
+
+//   if (images_loaded_count >= images_total_count) {
+//     setTimeout(function () {
+//       if (!preloader.classList.contains("done")) {
+//         preloader.classList.add("done");
+//       }
+
+//       setTimeout(function () {
+//         function onEntry(entry) {
+//           entry.forEach((change) => {
+//             if (change.isIntersecting) {
+//               change.target.classList.add("element-show");
+//             } else {
+//               // change.target.classList.remove("element-show");
+//             }
+//           });
+//         }
+
+//         let options = {
+//           threshold: [0.5],
+//         };
+//         let observer = new IntersectionObserver(onEntry, options);
+//         let elements = document.querySelectorAll(".element-animation");
+
+//         for (let elm of elements) {
+//           observer.observe(elm);
+//         }
+//       }, 100);
+
+//       setTimeout(function () {
+//         function onEntry(entry) {
+//           entry.forEach((change) => {
+//             if (change.isIntersecting) {
+//               change.target.classList.add("element-show-2");
+//             } else {
+//               // change.target.classList.remove("element-show");
+//             }
+//           });
+//         }
+
+//         let options = {
+//           threshold: [0.7],
+//         };
+//         let observerR = new IntersectionObserver(onEntry, options);
+//         let elementsS = document.querySelectorAll(".element-animation-2");
+
+//         for (let elm of elementsS) {
+//           observerR.observe(elm);
+//         }
+//       }, 100);
+//     }, 1000);
+//   }
+// }
+// JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS
