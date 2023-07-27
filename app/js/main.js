@@ -295,3 +295,141 @@ Stars.addEventListener("input", function () {
     redStars.style.display = "block";
   }
 });
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+    } else {
+      // change.target.classList.remove("element-show");
+    }
+  });
+}
+
+let options = {
+  threshold: [0.5],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(".element-animation");
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
+$(document).ready(function () {
+  $("a.header__link[href='#contact']").on("click", function (event) {
+    event.preventDefault();
+
+    var id = $(this).attr("href");
+    var top = $(id).offset().top;
+
+    $("body,html").animate({ scrollTop: top }, 1000);
+  });
+});
+
+const contact = document.querySelector(".contact__input-name");
+const redStarContact = document.querySelector(".contact__red-star");
+
+contact.addEventListener("input", function () {
+  if (contact.value.trim() !== "") {
+    redStarContact.style.display = "none";
+  } else {
+    redStarContact.style.display = "block";
+  }
+});
+
+const contacts = document.querySelector(".contact__input-tel");
+const redStarContacts = document.querySelector(".contact__red-star-2");
+
+contacts.addEventListener("input", function () {
+  if (contacts.value.trim() !== "") {
+    redStarContacts.style.display = "none";
+  } else {
+    redStarContacts.style.display = "block";
+  }
+});
+
+$(document).ready(function () {
+  const $accordeonWrappers = $(".design-acardeon__wrapper");
+
+  // Скрываем текст всех аккордеонов, кроме первого
+  $accordeonWrappers
+    .not(":first")
+    .find(".design-acardeon__text-box")
+    .slideUp(0);
+  $accordeonWrappers.not(":first").removeClass("active");
+  $accordeonWrappers
+    .not(":first")
+    .find(".design-acardeon__arrow")
+    .css("transform", "rotate(0deg)");
+
+  // Делегируем событие клика на обертку аккордеона
+  $(".design-acardeon").on("click", ".design-acardeon__button", function () {
+    const $wrapper = $(this).parent(); // Обертка аккордеона
+    const isOpen = $wrapper.hasClass("active");
+
+    // Если обертка была закрыта, открываем её; иначе, закрываем все аккордеоны
+    if (!isOpen) {
+      $accordeonWrappers.removeClass("active");
+      $accordeonWrappers.find(".design-acardeon__text-box").slideUp(300);
+      $accordeonWrappers
+        .find(".design-acardeon__arrow")
+        .css("transform", "rotate(0deg)");
+
+      $wrapper.addClass("active");
+      $wrapper.find(".design-acardeon__text-box").slideDown(300);
+      $wrapper
+        .find(".design-acardeon__arrow")
+        .css("transform", "rotate(180deg)");
+    } else {
+      $wrapper.removeClass("active");
+      $wrapper.find(".design-acardeon__text-box").slideUp(300);
+      $wrapper.find(".design-acardeon__arrow").css("transform", "rotate(0deg)");
+    }
+  });
+});
+
+// Отримуємо усі елементи з класом "cards__card"
+const cardElements = document.querySelectorAll(".cards__card");
+
+// Зберігаємо посилання на активний елемент
+let activeCard = null;
+
+// Функція для відкриття / закриття карточки
+function toggleCard(event) {
+  const clickedCard = event.currentTarget;
+
+  if (activeCard === clickedCard) {
+    // Натиснута активна карточка, закриваємо її
+    clickedCard.classList.remove("active");
+    activeCard = null;
+  } else {
+    // Закриваємо попередню активну карточку, якщо вона є
+    if (activeCard) {
+      activeCard.classList.remove("active");
+    }
+
+    // Відкриваємо нову карточку
+    clickedCard.classList.add("active");
+    activeCard = clickedCard;
+  }
+}
+
+// Додаємо обробник подій для кожної карточки
+cardElements.forEach((card) => {
+  card.addEventListener("click", toggleCard);
+});
+
+// Додаємо обробник подій для всього документу
+document.addEventListener("click", function (event) {
+  const targetElement = event.target;
+
+  // Перевіряємо, чи користувач натиснув де-небудь, крім карточок
+  if (!targetElement.closest(".cards__card")) {
+    // Закриваємо активну карточку, якщо вона є
+    if (activeCard) {
+      activeCard.classList.remove("active");
+      activeCard = null;
+    }
+  }
+});

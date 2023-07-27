@@ -2,11 +2,13 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import 'animation';
 
 
 
-
-
+input{
+    border-radius: 1000px !important;
+}
 
 // Header style ----------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------
@@ -61,7 +63,7 @@ a.header__link{
         align-items: center;
     }
     &__menu-item {
-        @include text-style($dark-color, 16px, 20px, 500);
+        @include text-style($dark-color, 16px, 27px, 500);
         display: flex;
         align-items: center;
         position: relative;
@@ -303,10 +305,11 @@ a.header__link{
         margin-left: 30px;
     }
     &__btn-link {
+        display: block;
+        text-align: center;
         border: none;
         margin: 0;
-        @include standart-btn;
-        padding: 15px 36px;
+        width: 130px;
     }
     &__burger {
         display: none;
@@ -519,7 +522,7 @@ a.header__link{
         width: 100%;
     }
     &__form-descr {
-        @include text-style($dark-color, 16px, 20px, 500);
+        @include text-style($dark-color, 16px, 27px, 500);
         margin-top: 10px;
     }
     &__img {
@@ -538,12 +541,42 @@ a.header__link{
     }
 }
 
+.top.design{
+    .top__inner {
+        padding-top: 145px;
+        padding-bottom: 50px;
+    }
+    .top__title{
+        margin-bottom: 20px;
+    }
+}
+
+.top.e-commerce-web{
+    .top__inner {
+        padding-top: 145px;
+    }
+}
+
+.top.e-commerce{
+    .top__inner {
+        padding-top: 145px;
+    }
+    .top__title{
+        margin-bottom: 20px;
+    }
+}
+
 .top.marketing{
     .top__inner{
         padding-top: 145px;
     }
 }
 
+.top.horeca-mobile{
+    .top__inner{
+        padding-top: 113px;
+    }
+}
 
 .top.top__qr-code{
     .top__inner{
@@ -575,6 +608,38 @@ a.header__link{
     border: none;
 }
 
+.top.horeca-waiter{
+    .top__inner{
+        padding-top: 155px;
+    }
+    .top__title{
+        margin-bottom: 20px;
+    }
+}
+
+.top.horeca{
+    .top__inner{
+        padding-top: 120px;
+    }
+    .top__title{
+        margin-bottom: 20px;
+    }
+}
+
+.top.horeca-cofee{
+    .top__inner{
+        padding-top: 145px;
+    }
+} 
+
+.top.horeca-menu{
+    .top__inner{
+        padding-top: 145px;
+    }
+    .top__title{
+        margin-bottom: 20px;
+    }
+} 
 
 // ----------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------Top style end
@@ -605,7 +670,7 @@ a.header__link{
     &__inner {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        grid-gap: 30px;
+        gap: 30px!important;
         max-width: 1185px;
     }
     &__card-bg{
@@ -631,7 +696,7 @@ a.header__link{
             }
             .cards__card-hovered {
                 opacity: 1;
-            }      
+            }     
         }
     }
     &__card-title {
@@ -691,6 +756,10 @@ a.header__link{
 
 // Partners style ----------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------
+
+.partners.without-padding{
+    padding-top: 0;
+}
 
 .partners {
     &__inner-2{
@@ -818,6 +887,30 @@ a.header__link{
         cursor: pointer;
     }
 }
+
+
+.contact__input-wrap {
+    position: relative;
+    max-width: 433px;
+    width: 100%;
+}
+// .contact__input-name {
+// }
+.contact__red-star {
+    position: absolute;
+    top: 9px;
+    left: 105px;
+    @include text-style($red, 16px, 27px, 600);
+}
+// .contact__input-tel {
+// }
+.contact__red-star-2 {
+    position: absolute;
+    top: 9px;
+    left: 240px;
+    @include text-style($red, 16px, 27px, 600);
+}
+
 
 // ----------------------------------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------------------Contact style end
@@ -1196,8 +1289,70 @@ a.header__link{
 
 // OPPORTUNITIES style ----------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------
+
+.opportunities.cofee{
+    margin-bottom: 0;
+    .opportunities__box-text{
+        margin-top: 20px;
+    }
+}
+
+.opportunities.no{
+    margin-bottom: 0;
+}
+
+section.opportunities.revers.horeca{
+    margin-bottom: 0;
+}
+
+.opportunities.marketing{
+    margin-bottom: 0;
+    margin-bottom: 12px;
+    &:nth-child(3){
+        margin-bottom: 0;
+    }
+}
+
+.opportunities.horeca.main{
+    p.opportunities__box-text{
+        margin-top: 20px;
+    }
+}
+
+section.opportunities.revers.horeca.main{
+    margin-bottom: 0;
+}
+
 .opportunities__main-btn.mobile{
     display: none;
+}
+.opportunities__item{
+    max-width: 570px;
+    width: 100%;
+}
+.opportunities__img-content {   
+    width: 100%;
+}
+.opportunities__bottom-title {
+    margin-left: 20px;
+    @include text-style($orange-color, 24px, 30px, 700);
+    margin-bottom: 10px;
+    max-width: 570px;
+}
+.opportunities__bottom-subtitle {
+    margin-left: 20px;
+    @include text-style($dark-color, 20px, 24px, 500);
+    margin-bottom: 3px;
+    max-width: 570px;
+}
+.opportunities__bottom-title-descr {
+    margin-left: 20px;
+    @include text-style($dark-color, 16px, 20px, 400);
+    max-width: 570px;
+}
+
+.opportunities.marketing.out .opportunities__box-title{
+    max-width: 570px;
 }
 
 
@@ -1456,8 +1611,1009 @@ max-width: 460px;
 // -----------------------------------------------------------------------------------------INTEGRATION style end
 
 
+// SEO style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.seo__footer-title{
+    text-align: center;
+}
+
+
+.line{
+    position: absolute;
+    bottom: 80px;
+    max-width: 1050px;
+    padding-right: 50px;
+    width: 100%;
+}
+.seo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__inner {
+        background-image: url(/images/hear/bg-hear.png);
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 0 30px;
+    }
+    &__item {
+        position: relative;
+        padding-bottom: 80px;
+    }
+    &__content {
+        max-width: 538px;
+        margin-left: 35px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    &__description {
+        @include text-style($dark-color, 16px, 27px, 500);
+    }
+    &__img {
+        max-width: 567px;
+    }
+    &__item-title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__boxes {
+        display: flex;
+        align-items: center;
+    }
+    &__box {
+    }
+    &__box-img {
+    }
+    &__box-descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+        text-align: center;
+        margin-top: 10px;
+    }
+    &__footer {
+        margin-top: 67px;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__footer-title {
+        text-transform: uppercase;
+        @include text-style($orange-color, 34px, 41px, 700);
+    }
+}
+
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------SEO style end
+
+// DESCRIPTION CARD style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.description-card {
+    
+    &__inner {
+        position: relative;
+        z-index: 99;
+        display: flex;
+        justify-content: center;
+    }
+    &__card {
+        background-color: rgba(194, 194, 194, 0.20);
+        border-radius: 30px;
+        max-width: 570px;
+        margin-left: 30px;
+        width: 100%;
+        height: auto;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    &__content {
+        padding: 30px 0px 0px 30px;
+        max-width: 510px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        @include text-style($orange-color, 24px, 29px, 700);
+        margin-bottom: 20px;
+    }
+    &__descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+    }
+    &__img {
+        max-width: 570px;
+        width: 100%;
+        margin-top: 22px;
+        margin-bottom: -3px;
+    }
+    &__btn{
+        width: 510px;
+        display: block;
+        text-align: center;
+        margin: 30px auto;
+    }
+    &.brand{
+        .description-card__card {
+            overflow: hidden;
+        }
+        img.description-card__img{
+            margin-bottom: -12px;
+        }
+    }
+    &.horeca-2{
+        margin-top: 0;
+        &:nth-child(2){
+            .description-card__img{
+                margin: 0 auto;
+            }
+        }
+        .description-card__img.horeca-2{
+            max-width: 491px;
+            max-height: 437px;
+            display: block;
+            margin: 22px auto 0 auto;
+        }
+        .description-card__img.horeca-1{
+            max-width: 437px;
+            display: block;
+            margin: 22px auto 0 auto;
+        }
+    }
+    &.mobile{
+        .description-card__inner{
+            .description-card__card:nth-child(2){
+                .description-card__content{
+                    max-width: 545px;
+                }
+            }
+            .description-card__btn{
+                margin-top: 30px;
+            }
+            .description-card__img{
+                margin-top: 0;
+            }
+        }
+        
+    }
+    &.horeca{
+        margin-top: 100px;
+        .description-card__subtitle{
+            margin-bottom: 0;
+        }
+        .description-card__title{
+            margin-bottom: 0;
+        }
+        .description-card__content{
+            display: block;
+            margin-bottom: 30px;
+        }
+        .description-card__descr {
+            height: 108px;
+        }
+        .description-card__card:nth-child(2){
+            .description-card__content{
+                .description-card__title{
+                }
+            }
+            .description-card__img{
+                max-width: 548px;
+            }
+        }
+        .description-card__img{
+            display: block;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin: 0 auto;
+        }
+    }
+}
+.description-card__titles{
+    height: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section.description-card{
+    margin-bottom: 100px;
+}
+
+.description-card.horeca-2{
+    .description-card__img{
+        max-width: 437px;
+        display: block;
+        margin: 30px auto 0;
+    }
+    .description-card__img.horeca-3{
+        // margin-top: 37px;
+    }
+    .description-card__content{
+        height: 221px;
+    }
+}
+
+.description-card.horeca-2{
+    .description-card__content{
+        max-width: 533px;
+    }
+}
+
+
+.description-card.mobile{
+    .description-card__img.mobile{
+        max-width: 416px ;
+        display: block;
+        margin: 30px auto 0;
+    }
+    .description-card__img.mobile-1{
+        max-width: 530px ;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.description-card__img.mobile-4{
+    max-width: 562px;
+    display: block;
+    margin: 30px auto 0;
+    max-height: 389px;
+    margin-bottom: 0;
+}
+.description-card.mobile-when{
+    margin-bottom: 30px;
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------DESCRIPTION CARD style end
+
+// LONG CArD style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+.long-card.small-down{
+    margin-top: 206px;
+    margin-bottom: 30px;
+}
+
+.long-card.smal{
+    margin-bottom: 30px;
+    margin-top: 63px;
+}
+
+.long-card.revers{
+    .long-card__inner{
+        flex-direction: row-reverse;
+    }
+    .long-card__img {
+        margin-top: -196px;
+    }
+}
+
+.long-card {
+    margin-bottom: 100px;
+    margin-top: 215px;
+    &__inner.smal{
+        max-height: 302px;
+    }
+    &__inner {
+        display: flex;
+        max-height: 313px;
+        border-radius: 30px;
+        background-color: $white-gray;
+    }
+    &__content.smal{
+        max-width: 640px;
+        margin-right: 30px;
+    }
+    &__content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 60px;
+        max-width: 510px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        margin-bottom: 20px;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    &__text {
+        @include text-style($dark-color, 16px, 27px, 500);
+        margin-bottom: 20px;
+    }
+    &_btn {
+        width: 510px;
+    }
+    &__img {
+        max-width: 570px;
+        height: 100%;
+        margin-top: -170px;
+    }
+    &__img.smal{
+        max-width: 470px;
+        margin-top: -29px;
+        margin-right: 30px;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------LONG CArD style end
+
+
+// ORANGE LIST style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.orange-list {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__inner{
+        display: flex;    
+        align-items: center;
+    }
+    &__content {
+        margin-right: 70px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        max-width: 540px;
+    }
+    &__item {
+        display: flex;
+        align-items: start;
+        margin-bottom: 8px;
+    }
+    &__text {
+        @include text-style($dark-color, 16px, 27px, 500);
+            margin-left: 10px;
+            max-width: 506px;
+    }
+    &__img {
+        & img{
+            max-width: 570px;
+        }
+    }
+}
+.description-card.mobile-2{
+    margin-bottom: 0;
+}
+
+.orange-list.web{
+    margin-top: 0;
+}
+
+.orange-list.revers{
+    .orange-list__inner{
+        flex-direction: row-reverse;
+    }
+    .orange-list__content{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .orange-list__btn{
+        width: 100%;
+        max-width: 570px;
+        border: none;
+    }
+}
+
+.orange-list.bg-gray {
+    &.revers{
+        .orange-list__content{
+            margin-left: 0;
+            margin-right: 60px;
+        }
+        .orange-list__inner{
+            max-height: 673px;
+            flex-direction: row;
+        }
+        .orange-list__img {
+            margin-top: -257px;
+        }
+    }
+    margin-top: 30px;
+    .orange-list__inner{
+        flex-direction: row-reverse;
+        background-image: url(/images/list/bg-hear.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 30px;
+    }
+    .orange-list__content{
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .orange-list__descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+        margin-bottom: 30px;
+    }
+    .orange-list__subtitle {
+        @include text-style($orange-color, 24px, 26px, 700);
+        margin-bottom: 15px;
+    }
+}
+
+
+.orange-list.web{
+    .orange-list__list{
+        max-width: 570px;
+        width: 100%;
+    }
+    .orange-list__content{
+        width: 100%;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------ORANGE LIST style end
+
+
+//  COULUMN style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.coulumn.telegram{
+    .coulumn__img{
+        max-width: 503px;
+    }
+    .coulumn__img.horeca{
+        max-width: 391px;
+    }
+}
+
+.coulumn.design{
+    margin-top: 0;
+    .coulumn__text-box{
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .coulumn__img{
+        margin-top: 30px;
+    }
+}
+
+img.coulumn__img.e-commerce{
+    max-width: 520px;
+}
+
+img.coulumn__img.design{
+    max-width: 485px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.coulumn__btn{
+    margin-top: 20px;
+    width: 234px;
+    display: block;
+}
+
+.coulumn.horeca{
+    .coulumn__text-box{
+        height: 243px;
+    }
+    .coulumn__text-title{
+        margin-bottom: 20px;
+    }
+    .coulumn__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coulumn__img{
+        margin-top: 30px;
+    }
+}
+
+.coulumn {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    &__inner {
+        display: flex;
+    }
+    &__item {
+        max-width: 570px;
+        width: 100%;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__text-box {
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+    }
+    &__text-title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__text-descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+    }
+    &__img {
+        margin-top: 20px;
+        max-width: 570px;
+        width: 100%;
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- COULUMN style end
+
+
+
+//  MENU style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.menu {
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        max-width: 470px;
+    }
+    &__content {
+        margin-left: 30px;
+    }
+    &__content-box {
+        max-width: 670px;
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__content-title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__content-descr {
+        @include text-style($dark-color, 16px, 20px, 500);
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- MENU style end
+
+
+//  PAYMENT style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.payment {
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        text-align: center;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__img {
+        max-width: 570px;
+        margin-right: 30px;
+    }
+    &__list {
+        max-width: 570px;
+    }
+    &__list-item {
+        margin-bottom: 70px;
+        &:last-child{
+            margin-bottom: 0;   
+        }
+        &:nth-child(1){
+            .payment__list-number{
+                padding: 5.5px 22px;
+            }
+        }
+        &:nth-child(2){
+            .payment__list-number{
+                padding: 5.5px 18px;
+            }
+        }
+        &:nth-child(3){
+            .payment__list-number{
+                padding: 5.5px 18px;
+            }
+        }
+        &:nth-child(4){
+            .payment__list-number{
+                padding: 5.5px 16.5px;
+            }
+        }
+    }
+    &__list-box{
+        display: flex;
+        align-items: center;
+    }
+    &__list-number {
+        @include text-style($white-color, 40px, 49px, 700);
+        display: block;
+        text-align: center;
+        border-radius: 1000px;
+        box-shadow: 0px 0px 20px 0px rgba(255, 94, 19, 0.40), 4px 4px 15px 0px rgba(255, 255, 255, 0.20) inset;
+        background: linear-gradient(115deg, #FF5B29 0%, #FFA917 100%);
+        padding: 10px;
+    }
+    &__list-text {
+        @include text-style($dark-color, 16px, 27px, 500);
+
+        margin-left: 15px;
+    }
+    &__list-images {
+        margin-left: 75px;
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    &__list-img {
+        max-width: 65px;
+        width: 100%;
+        filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.10));
+        margin-left: 10px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+    &__list-img2 {
+        width: 100%;
+        filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.10));
+        margin-left: 10px;
+        &:nth-child(1){
+            max-width: 135px;
+            margin-left: 0;
+        }
+        &:nth-child(2){
+            max-width: 112px;
+        }
+        &:nth-child(3){
+            max-width: 128px;
+        }
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- PAYMENT style end
+
+
+
+//  Design style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.design-block.bottom-zero{
+    padding-bottom: 100px;
+    padding-top: 50px;
+    .design-block__box{
+        bottom: 0;
+    }
+}
+
+.design-block {
+    padding-bottom: 130px;
+    &__inner {
+        position: relative;
+    }
+    &__img {
+        &.mobile{
+            display: none;
+        }
+        width: 100%;
+    }
+    &__box {
+        position: absolute;
+        bottom: 57px;
+        max-width: 597px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: $white-color;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+    }
+    &__box-title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    &__box-descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+    }
+    &__box-btn {
+        display: block;
+        width: 234px;
+        margin-top: 20px;
+    }    
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- Design style end
+
+
+
+//  WRAPPER_DESIGN style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.wrapper-design {
+    background-image: url(/images/wrapper-design/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 433px;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__img { 
+        margin-top: -93px;
+        margin-left: -92px;
+        max-width  : 655px;
+    }
+    &__box {
+        max-width: 570px;
+        margin-left: 50px;
+    }
+    &__box-title {
+        margin-bottom: 20px;
+        text-transform: uppercase; 
+        @include text-style($orange-color, 34px, 41px, 700);
+        max-width: 470px;
+    }
+    &__box-descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+    }
+    &__box-btn {
+        display: block;
+        width: 234px;
+        margin-top: 30px;
+    }
+}
+
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- WRAPPER_DESIGN style end
+
+
+
+
+
+//  DESIGN-ACCARDEON style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.design-acardeon {
+    margin-bottom: 100px;
+    height: 786px;
+    &__main-img{
+        max-width: 945px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+    }
+    &__box{
+        display: flex;
+        justify-content: start;
+        width: 1170px;
+    }
+    display: flex;
+    justify-content: right;
+    background-color: $white-gray;
+    &__inner { 
+        margin-top: 50px;
+        max-width: 570px;
+        width: 100%;
+        margin-right: 30px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        max-width: 444px;
+    }
+    &__buttons {
+    }
+    &__wrapper {
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        background-color: $white-color;
+        padding: 15px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    &__number {
+        @include text-style($orange-color, 24px, 29px, 700);
+        margin-right: 10px;
+    }
+    &__button-title {
+        @include text-style($dark-color, 20px, 26px, 700); 
+    }
+    &__arrow {
+    }
+    &__text-box {
+        padding: 30px 15px 20px;
+    }
+    &__text {
+        @include text-style($dark-color, 16px, 27px, 500);                                  
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------  DESIGN-ACCARDEONstyle end
+
+
+
+
+
+//  DESIGN-CARDS style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.design-cards {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+        grid-gap: 0;
+        margin-top: 30px;
+    }
+    &__box { 
+        width: 390px;
+        height: 390px;
+        transition: all .5s;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            .design-cards__box-content{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    &__box-img {
+        max-width: 390px;
+    }
+    &__box-content {
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all .5s;
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        background-color: rgba(255, 81, 0, 0.75);
+        backdrop-filter: blur(10px);
+    }
+    &__box-title {
+        @include text-style($white-color, 34px, 41px, 700);
+        max-width: 238px;
+        text-transform: uppercase;
+        border-bottom: 1px solid $hover-btn-white;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    &__descr {
+        @include text-style($white-color, 16px, 27px, 500);
+        text-align: center;
+        max-width: 360px;
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- DESIGN-CARDS style end
+
+
+
+//  DESIGN-LIST style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.design-list {
+    display: flex;
+    background-color: $white-gray;
+    &__img {
+        max-width: 945px;
+    }
+    &__inner {
+        margin: 121px 0 121px 30px;
+        max-width: 570px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+    &__number {
+        margin-right: 30px;
+        @include text-style($hover-btn-white, 62px, 76px, 700);
+        text-transform: uppercase;
+        max-width: 79px;
+        width: 100%;
+        text-align: center  ;
+    }
+    &__descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+        max-width: 470px;
+    }
+    &__descr-title {
+        @include text-style($orange-color, 16px, 27px, 500);
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- DESIGN-LIST style end
+
+
+
+
+
+
+
 
 // bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg
+
+
+.bg__lines-right.smal{
+    background-image: url(/images/bg/lines-right.svg);
+    background-repeat: no-repeat;
+    background-position: center -440px;
+}
 
 .bg__lines-right{
     background-image: url(/images/bg/lines-bg.svg);
@@ -1489,6 +2645,10 @@ max-width: 460px;
 .bg__polotno-right{
     background-image: url(/images/bg/polotno-right.png);
     background-repeat: no-repeat;
+}
+
+.bg__lines-right.long.yes-no{
+    background-position: bottom;
 }
 
 // bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg bg
@@ -1693,6 +2853,9 @@ position: absolute;
         margin-bottom: 35px;
     }
 }
+
+
+
 
 
 

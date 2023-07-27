@@ -82,3 +82,20 @@ body {
 	max-width: 1920px;
 	margin: 0 auto;
 }
+
+.standart-btn{
+    @include text-style($white-color, 16px, 20px, 700);
+    border-radius: 1000px;
+    padding: 15px 0;
+    text-align: center;
+    background-color: $orange-color;
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        color: $white-color;
+        background-color: $hover-btn-standart;
+    }
+    &:active{ 
+        background-color: $active-btn-standart;
+    }
+}
