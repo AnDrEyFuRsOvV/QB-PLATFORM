@@ -433,3 +433,31 @@ document.addEventListener("click", function (event) {
     }
   }
 });
+
+
+const header = document.querySelector('.header');
+let prevScrollPos = window.pageYOffset;
+const defaultOffset = 100; // Задержка перед скрытием хедера после прокрутки
+
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+
+  // Проверяем, скроллится ли вниз или вверх
+  if (prevScrollPos > currentScrollPos) {
+    // Прокрутка вверх - показываем хедер
+    header.classList.remove('header--hidden');
+  } else {
+    // Прокрутка вниз - скрываем хедер после прокрутки на defaultOffset пикселей
+    if (currentScrollPos > defaultOffset) {
+      header.classList.add('header--hidden');
+    }
+  }
+
+  prevScrollPos = currentScrollPos;
+}
+
+// Вызываем функцию handleScroll, чтобы обработать скролл при загрузке страницы
+handleScroll();
+
+// Обрабатываем событие скролла
+window.addEventListener('scroll', handleScroll);

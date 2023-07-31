@@ -8,24 +8,33 @@
 
 input{
     border-radius: 1000px !important;
-    border-radius: 1000px !important;
 }
 
 // Header style ----------------------------------------------------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------
 
 a.header__link{
-    transition: all .3s;
+    transition: all .1s;
     &:hover{
         color: $orange-color;
+
     }
 }
+
+.header--hidden .header__inner {
+    transform: translateY(-100%);
+    transition-delay: 0.1s;
+}
+
+
 .header{
     position: relative;
     &__inner{
         position: fixed;
         width: 100%;
         z-index: 989;
+        transition: transform 0.4s ease;transform: translateY(0);
+
     }
     &__lang{
         position: relative;
@@ -141,6 +150,7 @@ a.header__link{
             }
         }
     }
+
     &__dropdown-item {
         padding: 10px 30px;
         cursor: pointer;
@@ -781,8 +791,8 @@ a.header__link{
         display: grid;
         margin: 0 auto;
         max-width: 1170px;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-gap: 50px 105px; 
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 50px 105px;
     }
     &__title{
         margin-bottom: 30px;
@@ -816,6 +826,7 @@ a.header__link{
         height: 450px;
         position: relative;
     }
+    // TODO I need to create new table
     &__img-phone{
         max-width: 597px;
     }
@@ -908,7 +919,7 @@ a.header__link{
 .contact__red-star-2 {
     position: absolute;
     top: 9px;
-    left: 240px;
+    left: 163px;
     @include text-style($red, 16px, 27px, 600);
 }
 
@@ -2854,6 +2865,12 @@ position: absolute;
         margin-bottom: 35px;
     }
 }
+
+
+
+
+
+
 
 
 
