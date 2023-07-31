@@ -462,8 +462,61 @@ handleScroll();
 
 
 
-// // Обрабатываем событие скролла
-// window.addEventListener('scroll', handleScroll);
+// Обрабатываем событие скролла
+window.addEventListener('scroll', handleScroll);
+
+
+
+window.onload = function () {
+  const icons = document.querySelector('.icons-paralax');
+
+  const forIcons = 15;
+  const speed = 0.05;
+
+  let positionX = 0, positionY = 0;
+  let cordXprocent = 0, cordYprocent = 0; // Corrected the variable name here
+
+  function setMouseParallaxStyle() {
+    const distX = cordXprocent - positionX; // Corrected the variable name here
+    const distY = cordYprocent - positionY; // Corrected the variable name here
+
+    positionX = positionX + (distX * speed);
+    positionY = positionY + (distY * speed);
+
+    icons.style.cssText = `transform: translate(${positionX / forIcons}%, ${positionY / forIcons}%);`;
+  }
+
+  setMouseParallaxStyle();
+
+  document.addEventListener("mousemove", function (e) {
+    const documentWidth = document.body.offsetWidth;
+    const documentHeight = document.body.offsetHeight;
+
+    const cordX = e.pageX - documentWidth;
+    const cordY = e.pageY - documentHeight;
+
+    cordXprocent = cordX / documentWidth * 100;
+    cordYprocent = cordY / documentHeight * 100;
+
+    setMouseParallaxStyle();
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 // // PARALAX TOP SECTION
 //
