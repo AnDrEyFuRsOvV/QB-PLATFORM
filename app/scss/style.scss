@@ -663,10 +663,6 @@ a.header__link{
 
 
 .cards{
-    background-image: url(/images/bg/cards-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     &__title {
         @include text-style($orange-color, 34px, 41px, 700);
         text-transform: uppercase;
@@ -2612,9 +2608,226 @@ img.coulumn__img.design{
 // ----------------------------------------------------------------------------------------- DESIGN-LIST style end
 
 
+//  MULT style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.mult {
+    margin-top: 100px;
+    &__inner {
+        display: flex;
+    }
+    &__img {
+        max-width: 570px;
+        width: 100%;
+    }
+    &__boxes {
+        margin-top: 100px;
+        margin-left: 30px;
+        position: relative;
+        &::before{
+            content: url(/images/mult/top.svg);
+            position: absolute;
+            top: -165px;
+        }
+        &::after{
+            content: url(/images/mult/bottom.svg);
+            position: absolute;
+            bottom: -80px;
+        }
+    }
+    &__box {
+        max-width: 570px;
+        width: 100%;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+        margin-bottom: 40px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        margin-bottom: 10px;
+    }
+    &__descr {
+        max-width: 510px;
+        @include text-style($dark-color, 16px, 20px, 500);
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- MULT style end
+
+
+//  TEXT style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.text {
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 34px, 700);
+    }
+    &__box {
+        padding: 30px;
+        border-radius: 30px;
+        background-color: $white-color;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+        max-width: 670px;
+        width: 100%;
+    }
+    &__box-descr {
+        @include text-style($dark-color, 24px, 27px, 500);
+        & span{
+            @include text-style($orange-color, 24px, 27px, 500);
+        }
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- TEXT style end
+
+
+//  ITEMS style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.items {
+    margin-bottom: 100px;
+    &__title {
+        @include text-style($orange-color, 34px, 34px, 700);
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__inner {
+        display: flex;
+    }
+    &__box {
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__img {
+        max-width: 270px;
+    }
+    &__box-title {
+        @include text-style($orange-color, 20px, 24px, 700);
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    &__box-descr {
+        @include text-style($dark-color, 16px, 20px, 500);
+    }
+}
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- ITEMS style end
 
 
 
+//  INFO style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+.info {
+    margin-bottom: 100px;
+    &__inner {
+        margin: 0 auto;
+        & img{
+            max-width: 1170px;
+            width: 100%;
+        }
+    }
+    &__blok{
+        display: flex;
+        justify-content: center;
+    }
+    &__content {
+        display: flex;
+        border-radius: 30px;
+        background-color: $white-color;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+    }
+    &__content-box {
+        padding: 30px;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__box-title {
+        @include text-style($orange-color, 24px, 30px, 700);
+        margin-bottom: 5px;
+        text-align: center;
+        max-width: 308px;
+        text-transform: uppercase;
+    }
+    &__content-descr {
+        @include text-style($dark-color, 16px, 20px, 500);
+        text-align: center;
+        max-width: 310px;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- INFO style end
+
+//  MISSION style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.mission {
+    &__box {
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+        background-color: #fff;
+        margin-bottom: 35px;
+        max-width: 836px;
+    }
+    &__box-title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        margin-bottom: 10px;
+    }
+    &__box-descr {
+        @include text-style($dark-color, 16px, 20px, 500);
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        max-width: 570px;
+    }
+    &__item {
+        max-width: 570px;
+        padding: 30px;
+        border-radius: 30px;
+        box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+        background-color: #fff;
+        margin-left: 30px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: url(/images/mission/mission-arrow.svg);
+            top: -240px;
+            left: -69px;
+        }
+    }
+    &__item-title {
+        @include text-style($orange-color, 34px, 36px, 700);
+        margin-bottom: 10px;
+    }
+    &__item-descr {
+        @include text-style($dark-color, 16px, 20px, 500);
+    }
+    &__item-btn{
+        width: 370px;
+        margin-top: 10px;
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- MISSION style end
 
 
 

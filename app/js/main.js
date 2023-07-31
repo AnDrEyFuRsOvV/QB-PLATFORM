@@ -459,5 +459,87 @@ function handleScroll() {
 // Вызываем функцию handleScroll, чтобы обработать скролл при загрузке страницы
 handleScroll();
 
-// Обрабатываем событие скролла
-window.addEventListener('scroll', handleScroll);
+
+
+
+// // Обрабатываем событие скролла
+// window.addEventListener('scroll', handleScroll);
+//
+// // PARALAX TOP SECTION
+//
+//
+// window.onload = function () {
+//   const paralax = document.querySelector('.paralax');
+//
+//   if(paralax) {
+//     const icons = document.querySelector('.icons-paralax');
+//     const phone = document.querySelector('.phone-top');
+//
+//     const forIcons = 40;
+//     const forPhone = 20;
+//
+//     const speed =0.05;
+//
+//     let positionX = 0, positionY = 0;
+//     let coordXprocent = 0, coordYprocent = 0;
+//
+//     function setMouseParallaxStyle() {
+//       const distX = coordXprocent - positionY;
+//       const distY = coordYprocent - positionY;
+//
+//       positionX = positionX + (distX * spped);
+//       positionY = positionY + (distY * speed);
+//
+//       icons.style.cssText = `transform: translate(${positionX / forIcons}%,${positionY / forIcons}%);`
+//       phone.style.cssText = `transform: translate(${positionX / forPhone}%,${positionY / forPhone}%);`
+//     }
+//     setMouseParallaxStyle();
+//
+//     paralax.addEventListener("mousemove", function (e) {
+//       const paralaxWidth = paralax.offsetWidth;
+//       const paralaxHeight = paralax.offsetHeight;
+//
+//       const cordX = e.pageX - paralaxWidth;
+//       const cordY = e.pageY - paralaxHeight;
+//
+//       cordXprocent = cordX / paralaxWidth * 100;
+//       cordYprocent = cordY / paralaxHeight * 100;
+//     })
+//
+//     let thresholdSets = [];
+//     for (let i =0; i <= 1.0 i += 0.005) {
+//       thresholdSets.push(i)''
+//     }
+//     const callback = function (entries, observer) {
+//       const scrollTopProcent = window.pageYOffset / paralax.offsetHeight * 100;
+//       setParalaxItemsStyle(scrollTopProcent);
+//     }
+//     const observer = new IntersectionObserver(callback, {
+//       threshold: thresholdSets
+//     })
+//
+//     observer.observe(document.querySelector('.content'));
+//
+//     function setParallaxItemsStyle(scrollTopProcent){
+//       icons.style.cssText = `transform: translate(0% - ${scrollTopProcent / 9}%);`
+//       phone.style.cssText = `transform: translate(0% - ${scrollTopProcent / 6}%);`
+//     }
+//
+//
+//   }
+//
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

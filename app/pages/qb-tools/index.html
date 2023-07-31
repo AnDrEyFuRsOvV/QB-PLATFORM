@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="stylesheet" href="/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header__burger-body">
+    <div class="header__burger-wrapper">
+        <div class="header__burger-acordeon">
+            <p class="header__burger-title">Рішення для HoReCa</p>
+            <img class="header__burger-img-arrow" src="/images/header/acordeon-arrow.svg" alt="">
+            <div class="header__burger-acordeon-body">
+                <a class="header__burger-link" href="/pages/horeca/mobile/">Мобільний додаток для ресторану або dark
+                    kitchen</a>
+                <a class="header__burger-link" href="/pages/horeca/cofee//">Мобільний додаток для кав’ярні</a>
+                <a class="header__burger-link" href="/pages/horeca/web-site/">Web-сайт для замовлень і
+                    лояльності</a>
+                <a class="header__burger-link" href="/pages/horeca/online-menu/">Online-меню</a>
+                <a class="header__burger-link" href="/pages/horeca/telegram/">Telegram чат-бот замовлень</a>
+                <a class="header__burger-link" href="/pages/feedback/">Сервіс зворотного зв’язку QR BOSS</a>
+                <a class="header__burger-link" href="/pages/qb-tools/">Додаток QB tools для співробітників</a>
+                <a class="header__burger-link" href="/pages/qr-code/">Технологія QR кодування</a>
+                <a class="header__burger-link" href="/pages/marketing/">Маркетингові інструменти</a>
+            </div>
+        </div>
+        <div class="header__burger-acordeon">
+            <p class="header__burger-title">Рішення для Інтернет-торгівлі</p>
+            <img class="header__burger-img-arrow" src="/images/header/acordeon-arrow.svg" alt="">
+            <div class="header__burger-acordeon-body">
+                <a class="header__burger-link" href="/pages/e-commerce/mobile/">Мобільний додаток магазину</a>
+                <a class="header__burger-link" href="/pages/e-commerce/web-site/">Web-сайт для замовлень і
+                    лояльності</a>
+                <a class="header__burger-link" href="/pages/feedback/">Сервіс зворотного зв’язку QR BOSS</a>
+                <a class="header__burger-link" href="/pages/qb-tools/">Додаток QB tools для співробітників</a>
+                <a class="header__burger-link" href="/pages/qr-code/">Технологія QR кодування</a>
+                <a class="header__burger-link" href="/pages/marketing/">Маркетингові інструменти</a>
+            </div>
+        </div>
+        <div class="header__burger-acordeon">
+            <p class="header__burger-title">Рішення для дистриб’юторів</p>
+            <img class="header__burger-img-arrow" src="/images/header/acordeon-arrow.svg" alt="">
+            <div class="header__burger-acordeon-body">
+                <a class="header__burger-link" href="/pages/distributors/mobile/">Мобільний додаток магазину</a>
+                <a class="header__burger-link" href="/pages/distributors/web-site/">Web-сайт для замовлень і
+                    лояльності</a>
+                <a class="header__burger-link" href="/pages/feedback/">Сервіс зворотного зв’язку QR BOSS</a>
+                <a class="header__burger-link" href="/pages/qb-tools/">Додаток QB tools для співробітників</a>
+                <a class="header__burger-link" href="/pages/marketing/">Маркетингові інструменти</a>
+            </div>
+        </div>
+        <div class="header__burger-acordeon">
+            <p class="header__burger-title">Рішення для доставки води</p>
+            <img class="header__burger-img-arrow" src="/images/header/acordeon-arrow.svg" alt="">
+            <div class="header__burger-acordeon-body">
+                <a class="header__burger-link" href="/pages/wather/mobile/">Мобільний додаток для замовлень і
+                    доставки</a>
+                <a class="header__burger-link" href="/pages/feedback/">Сервіс зворотного зв’язку QR BOSS</a>
+                <a class="header__burger-link" href="/pages/qb-tools/">Додаток QB tools для співробітників</a>
+                <a class="header__burger-link" href="/pages/marketing/">Маркетингові інструменти</a>
+            </div>
+        </div>
+        <div class="header__burger-acordeon">
+            <p class="header__burger-title">Рішення для спорту</p>
+            <img class="header__burger-img-arrow" src="/images/header/acordeon-arrow.svg" alt="">
+            <div class="header__burger-acordeon-body">
+                <a class="header__burger-link" href="/pages/feedback/">Система абонемент</a>
+                <a class="header__burger-link" href="/pages/qb-tools/">Сервіс зворотного зв’язку QR BOSS</a>
+                <a class="header__burger-link" href="/pages/marketing/">Маркетингові інструменти</a>
+            </div>
+        </div>
+        <div class="header__burger-acordeon">
+            <p class="header__burger-title">Послуги дизайну</p>
+            <img class="header__burger-img-arrow" src="/images/header/acordeon-arrow.svg" alt="">
+            <div class="header__burger-acordeon-body">
+                <a class="header__burger-link" href="/pages/design/logo/">Логотипи, торгові марки та знаки</a>
+                <a class="header__burger-link" href="/pages/design/style/">Фірмовий стиль</a>
+                <a class="header__burger-link" href="/pages/design/web-site/">Дизайн Web-сайтів та лендінг-пейдж</a>
+                <a class="header__burger-link" href="/pages/design/wrappers/">Дизайн упаковки, етикетки, меню</a>
+                <a class="header__burger-link" href="/pages/design/advertising/">Дизайн рекламної та поліграфічної
+                    продукції</a>
+            </div>
+        </div>
+        <div class="header__burger-acordeon">
+            <a href="/pages/marketing/" class="header__burger-title">Маркетингові рішення</a>
+        </div>
+        <div class="header__burger-acordeon">
+            <a href="https://webstick.com.ua/" class="header__burger-title">Розробка IT-продуктів</a>
+        </div>
+        <div class="header__burger-acordeon">
+            <a href="/pages/brend/" class="header__burger-title">Особистий бренд</a>
+        </div>
+        <div class="header__burger-footer">
+            <div class="header__burger-box">
+                <img src="/images/header/footer-1.svg" alt="" class="header__burger-img">
+                <a href="/pages/career/" class="header__burger-footer-text">Кар’єра</a>
+            </div>
+            <div class="header__burger-box">
+                <img src="/images/header/footer-3.svg" alt="" class="header__burger-img">
+                <a href="#" class="header__burger-footer-text">Instagram QB tools</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="header lock-padding">
+    <div class="header__inner lock-padding element-animation">
+        <div class="container-fluid element-animation">
+            <div class="header__choose-lang">
+                <div class="header__container">
+                    <div class="header__lang">
+                        <div class="select">
+                            <div class="select__header">
+                                <span class="select__curent">UA</span>
+                                <div class="select__icon">
+                                    <img src="/images/header/arrow-white.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="select__body">
+                                <div class="select__item">UA</div>
+                                <div class="select__item">EN</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__container element-animation">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <img src="/images/header/logo.svg" alt="" class="header__logo">
+                    </li>
+                    <li class="header__menu-item dropdown">
+                        <div class="header__dropdown">
+                            Рішення
+                            <img src="/images/header/arrrow-dropdown.svg" alt="" class="header__dropdown-arrow">
+                            <ul class="header__dropdown-list">
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/horeca/" class="header__dropdown-link">Рішення для HoReCa</a>
+                                    <ul class="header__dropdown-list-2">
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/horeca/mobile/" class="header__dropdown-link-2">Мобільний додаток для ресторану
+                                                або dark kitchen</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/horeca/cofee/" class="header__dropdown-link-2">Мобільний
+                                                додаток для
+                                                кав’ярні</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/horeca/web-site/" class="header__dropdown-link-2">Web-сайт для замовлень і
+                                                лояльності</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/horeca/online-menu/" class="header__dropdown-link-2">Online-меню</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/horeca/telegram/" class="header__dropdown-link-2">Telegram чат-бот замовлень</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/feedback/" class="header__dropdown-link-2">Сервіс
+                                                зворотного зв’язку QR BOSS</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/qb-tools/" class="header__dropdown-link-2">Додаток QB
+                                                tools для
+                                                співробітників</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/qr-code/" class="header__dropdown-link-2">Технологія QR
+                                                кодування</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/marketing/" class="header__dropdown-link-2">Маркетингові
+                                                інструменти</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/e-commerce/" class="header__dropdown-link">Рішення для
+                                        Інтернет-торгівлі</a>
+                                    <ul class="header__dropdown-list-2">
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/e-commerce/mobile/" class="header__dropdown-link-2">Мобільний додаток
+                                                магазину</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/e-commerce/web-site/" class="header__dropdown-link-2">Web-сайт для замовлень і
+                                                лояльності</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/feedback/" class="header__dropdown-link-2">Сервіс
+                                                зворотного зв’язку QR BOSS</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/qb-tools/" class="header__dropdown-link-2">Додаток QB
+                                                tools для
+                                                співробітників</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/qr-code/" class="header__dropdown-link-2">Технологія QR
+                                                кодування</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/marketing/" class="header__dropdown-link-2">Маркетингові
+                                                інструменти</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/distributors/" class="header__dropdown-link">Рішення для
+                                        дистриб’юторів</a>
+                                    <ul class="header__dropdown-list-2">
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/distributors/mobile/" class="header__dropdown-link-2">Мобільний додаток для
+                                                дистриб’юторів</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/distributors/web-site/" class="header__dropdown-link-2">Web-сайт для замовлень і
+                                                лояльності</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/feedback/" class="header__dropdown-link-2">Сервіс
+                                                зворотного зв’язку QR BOSS</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/qb-tools/" class="header__dropdown-link-2">Додаток QB
+                                                tools для
+                                                співробітників</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/marketing/" class="header__dropdown-link-2">Маркетингові
+                                                інструменти</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/wather/" class="header__dropdown-link">Рішення для доставки
+                                        води</a>
+                                    <ul class="header__dropdown-list-2">
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/wather/mobile/" class="header__dropdown-link-2">Мобільний додаток для замовлень
+                                                і доставки</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/feedback/" class="header__dropdown-link-2">Сервіс
+                                                зворотного зв’язку QR BOSS</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/qb-tools/" class="header__dropdown-link-2">Додаток QB
+                                                tools для
+                                                співробітників</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/marketing/" class="header__dropdown-link-2">Маркетингові
+                                                інструменти</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/sport/" class="header__dropdown-link">Рішення для спорту</a>
+                                    <ul class="header__dropdown-list-2">
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/sport/abonement/" class="header__dropdown-link-2">Система Abonement</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/feedback/" class="header__dropdown-link-2">Сервіс
+                                                зворотного зв’язку QR BOSS</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/marketing/" class="header__dropdown-link-2">Маркетингові
+                                                інструменти</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/design/" class="header__dropdown-link">Послуги дизайну</a>
+                                    <ul class="header__dropdown-list-2">
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/design/logo/" class="header__dropdown-link-2">Логотипи,
+                                                торгові марки та
+                                                знаки</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/design/style/" class="header__dropdown-link-2">Фірмовий
+                                                стиль</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/design/web-site/" class="header__dropdown-link-2">Дизайн
+                                                Web-сайтів та
+                                                лендінг-пейдж</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/design/wrapper/" class="header__dropdown-link-2">Дизайн
+                                                упаковки, етикетки,
+                                                меню</a>
+                                        </li>
+                                        <li class="header__dropdown-item-2">
+                                            <a href="/pages/design/advertising/" class="header__dropdown-link-2">Дизайн рекламної та
+                                                поліграфічної
+                                                продукції</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/marketing/" class="header__dropdown-link">Маркетингові
+                                        рішення</a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="https://webstick.com.ua/" class="header__dropdown-link">Розробка
+                                        IT-продуктів</a>
+                                </li>
+                                <li class="header__dropdown-item">
+                                    <a href="/pages/brend/" class="header__dropdown-link">Особистий бренд</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="/pages/career/" class="header__link">Кар’єра</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a href="#contact" class="header__link">Зв'яжіться з нами</a>
+                    </li>
+                </ul>
+                <div class="header__buttons">
+                    <div class="select mobile">
+                        <div class="select__header">
+                            <span class="select__curent">UA</span>
+                            <div class="select__icon">
+                                <img src="/images/header/arrow-black.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="select__body">
+                            <div class="select__item">UA</div>
+                            <div class="select__item">EN</div>
+                        </div>
+                    </div>
+                    <a href="https://admin.qrboss.com.ua/site/login" class="standart-btn header__btn-link">
+                        Увійти
+                    </a>
+                    <div class="header__burger">
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                        <div class="header__burger-line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper">
+    <main class="main">
+
+        <div class="bg__lines-right">
+            <section class="top index">
+                <div class="container">
+                    <div class="top__inner">
+                        <div class="top__box">
+                            <div class="top__content hidden element-animation">
+                                <h2 class="top__title element-animation">Додаток QB tools</h2>
+                                <p class="top__subtitle element-animation">для співробітників</p>
+                                <p class="top__description element-animation">
+                                    Контролюйте діяльність вашої компанії, реагуйте на замовлення та відгуки, продивляйтесь
+                                    📈аналітику, скануйте картки лояльності ваших клієнтів використовуючи додаток
+                                </p>
+                                <form class="top__form element-animation">
+                                    <input type="tel" id="phone" class="top__input" placeholder="">
+                                    <button class="standart-btn top__btn open__popup">Спробувати</button>
+                                </form>
+                                <p class="top__form-descr element-animation">Ми зв'яжемося з вами за декілька хвилин</p>
+                            </div>
+                        </div>
+                        <div class="top__box">
+                            <img class="top__img element-animation" src="/images/top/index.png" alt="">
+                        </div>
+                        <form class="top__form mobile">
+                            <input type="tel" id="phone-2" class="top__input" placeholder="">
+                            <button class="standart-btn top__btn open__popup">Спробувати</button>
+                            <p class="top__form-descr mobile">Ми зв'яжемося з вами за декілька хвилин</p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="description-card">
+            <div class="container">
+                <div class="description-card__inner">
+                    <div class="description-card__card">
+                        <div class="description-card__content">
+                            <div class="description-card__title">Керування замовленнями</div>
+                            <div class="description-card__descr">
+                                З додатком QB tools ви маєте можливість приймати замовлення від клієнтів безпосередньо у мобільному додатку, змінювати статуси замовлень та продивлятися детальну інформацію
+                            </div>
+                        </div>
+                        <img class="description-card__img mobile-1"
+                             src="/images/description-card/qb-tools-1.png" alt="">
+                    </div>
+                    <div class="description-card__card">
+                        <div class="description-card__content">
+                            <div class="description-card__title">Робота з відгуками</div>
+                            <div class="description-card__descr">
+                                Приймайте та оброблюйте відгуки і оцінки отримані від клієнтів у єдиному місці - мобільному додатку QB tools для співробітників. Зручна функція відправки SMS повідомлення на відгук дозволить вам оперативно реагувати на усі зауваження від клієнтів в один клік прямо з додатку
+                            </div>
+                        </div>
+                        <img class="description-card__img mobile" src="/images/description-card/qb-tools-2.png"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities revers horeca">
+            <div class="container">
+                <div class="opportunities__inner">
+                    <div class="opportunities__items">
+                        <div class="opportunities__item">
+                            <div class="opportunities__box">
+                                <h2 class="opportunities__box-title">Маркетингові можливості</h2>
+                                <p class="opportunities__box-text">
+                                    Додаток QB tools дозволяє вести оперативну комунікацію з усіма вашими клієнтами
+                                    завдяки вбудованій у додаток функціі відправки PUSH-повідомлень прямо з додатку
+                                    усім клієнтам або вибірково певним клієнтам окремо
+                                </p>
+                            </div>
+                        </div>
+                        <div class="opportunities__item">
+                            <img src="/images/opportunities/opportunities-qb-tools.png" alt="" class="opportunities__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities horeca">
+            <div class="container">
+                <div class="opportunities__inner">
+                    <div class="opportunities__items">
+                        <div class="opportunities__item">
+                            <div class="opportunities__box">
+                                <h2 class="opportunities__box-title">Детальна аналітика</h2>
+                                <p class="opportunities__box-text">
+                                    Переглядайте детальну аналітичну інформацію по локації або компанії вцілому з
+                                    отриманих відгуків - їх кількості, оцінок, а також показників NPS, CSAT, CES.
+                                    Продивляйтесь аналітику з отриманих замовлень, їх кількості, показників
+                                    середнього чеку, виручки, списаних бонусів та витрат клієнтів на доставку
+                                </p>
+                            </div>
+                        </div>
+                        <div class="opportunities__item">
+                            <img src="/images/opportunities/opportunities-qb-tools-2.png" alt="" class="opportunities__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="opportunities revers horeca">
+            <div class="container">
+                <div class="opportunities__inner">
+                    <div class="opportunities__items">
+                        <div class="opportunities__item">
+                            <div class="opportunities__box">
+                                <h2 class="opportunities__box-title">Зручні сповіщення</h2>
+                                <p class="opportunities__box-text">
+                                    Ми потурбувалися про те щоб ваші співробітники отримували найнеобхіднішу
+                                    інформацію якомога швидше та заощаджували свій час завдяки миттєвим
+                                    Push-сповіщенням про нові замовлення або відгуки від ваших клієнтів
+                                </p>
+                            </div>
+                        </div>
+                        <div class="opportunities__item">
+                            <img src="/images/opportunities/opportunities-qb-tools-3.png" alt="" class="opportunities__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="qr-code">
+            <div class="container">
+                <div class="qr-code__inner">
+                    <img src="/images/qr-code/qr-code-1.png" alt="" class="qr-code__img element-animation">
+                    <div class="qr-code__content element-animation">
+                        <h4 class="qr-code__title">Переконайтесь особисто</h4>
+                        <p class="qr-code__descr">Спеціально для вас ми підготували 🖥️ демонстрацію сервісу
+                            зворотного зв’язку QR BOSS де ви можете переконатися у зручності, легкості та
+                            функціональності його використання</p>
+                        <div class="qr-code__subtitle">Скануй QR код</div>
+                        <div class="qr-code__subdescr">та ознайомся з можливостями</div>
+                        <a href="https://qrboss.com.ua/R0vZ" class="standart-btn qr-code__btn">Ознайомитися</a>
+                    </div>
+                </div>
+                <div class="qr-code__mobile">
+                    <div class="qr-code__mobile-title">Переходь за посиланням</div>
+                    <div class="qr-code__mobile-descr">та ознайомся з можливостями</div>
+                    <a href="https://qrboss.com.ua/R0vZ"
+                       class="standart-btn qr-code__mobile-btn">Ознайомитися</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg__lines-left">
+            <section class="partners element-animation">
+                <div class="container">
+                    <h2 class="partners__title">Вже користуються нашими рішеннями</h2>
+                    <div class="partners__inner">
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-1.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-2.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-3.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-4.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-5.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-6.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-7.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-8.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-9.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-10.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-11.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-12.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-13.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-14.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-15.svg" alt="" class="parents__img">
+                        </div>
+                    </div>
+                    <div class="partners__inner-2" dir="rtl">
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-15.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-14.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-13.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-12.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-11.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-10.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-9.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-8.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-7.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-6.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-5.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-4.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-3.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-2.svg" alt="" class="parents__img">
+                        </div>
+                        <div class="parents__item">
+                            <img src="/images/partners/parters-1.svg" alt="" class="parents__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact element-animation">
+                <div class="container">
+                    <div class="contact__inner">
+                        <div class="contact__box">
+                            <h2 class="contact__title">Спробуйте наші рішення</h2>
+                            <p class="contact__descr">Будь ласка, заповніть форму і один з наших менеджерів зв’яжеться з вами за
+                                декілька хвилин</p>
+                            <form class="contact__form">
+                                <div class="contact__input-wrap">
+                                    <input class="contact__input-name" id="myInput" type="text" placeholder="Ваше ім’я">
+                                    <span class="contact__red-star">*</span>
+                                </div>
+                                <div class="contact__input-wrap">
+                                    <input class="contact__input-tel" type="tel" id="phone-3" placeholder="">
+                                    <span class="contact__red-star-2">*</span>
+                                </div>
+                                <button class="standart-btn contact__btn open__popup">Залишити заявку</button>
+                            </form>
+                            <p class="contact__polici">Натискаючи на кнопку, ви даєте згоду на оброку персональних даних та
+                                погоджуєтеся з<a href="#" class="link">Політикою конфіденційності</a></p>
+                        </div>
+                        <div class="contact__box">
+                            <img class="contact__img-phone" src="/images/contact/contact-tel.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <img src="/images/footer/logo.png" alt="" class="footer__logo">
+                    <div class="footer__descr"><span>Розумні інструменти</span> для зростання вашого бізнесу</div>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__items">
+                        <div class="footer__item-2">
+                            <div class="footer__item-text-2">Завжди з вами на зв'язку:</div>
+                        </div>
+                        <div class="footer__item-2">
+                            <a href="" class="footer__link-2">Відділ продажів: +38 (067) 333 10 29</a>
+                            <a href="" class="footer__link-2">Технічний відділ: +38 (073) 222 10 29</a>
+                            <div class="footer__item-social">
+                                <img src="/images/footer/telegram.svg" alt="" class="footer__item-social-img">
+                                <a href="" class="footer__link">Написати у Telegram</a>
+                            </div>
+                            <div class="footer__item-social">
+                                <img src="/images/footer/viber.svg" alt="" class="footer__item-social-img">
+                                <a href="" class="footer__link">Написати у Viber</a>
+                            </div>
+                        </div>
+                        <div class="footer__item-2">
+                            <div class="footer__links">
+                                <img src="/images/footer/main.png" alt="" class="footer__img">
+                                <a href="mailto:info@gbtools.com" class="footer__link">info@gbtools.com</a>
+                            </div>
+                            <div class="footer__links">
+                                <img src="/images/footer/instagram.png" alt="" class="footer__img">
+                                <a href="" class="footer__link">Instagram QB tools</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copypast">
+                        © 2013 Qb tools, Inc. All Rights Reserved.
+                    </div>
+                    <div class="footer__copypast">
+                        Qb tools, the Symbol, and Qb tools and the Symbol togetger are registered trademarks of Qb tools, Inc.
+                        All other trademarks remain the property of their respective owners.
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__item-text">
+                    Powered by WebStick
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-text active">
+                        Політика конфіденційності
+                    </div>
+                    <div class="footer__item-text active">
+                        Умови користування
+                    </div>
+                    <div class="footer__item-text active">
+                        Договір оферти
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<div class="popup">
+    <div class="popup__inner">
+        <div class="popup__box ass">
+            <img src="/images/popup/close.svg" alt="" class="close__btn">
+            <img src="/images/popup/logo.svg" alt="" class="popup__logo">
+            <div class="popup__descr">Ми отримали ваш запит та зв'яжемося з вами за декілька хвилин </div>
+            <img src="/images/popup/smile.svg" alt="" class="popup__smile">
+            <div class="standart-btn popup__btn">Дякуємо</div>
+        </div>
+    </div>
+</div>
+
+<div class="popup form">
+    <div class="popup__inner">
+        <div class="popup__box form">
+            <img src="/images/popup/close.svg" alt="" class="close__btn">
+            <img src="/images/popup/logo.svg" alt="" class="popup__logo">
+            <div class="popup__descr form">Залиште заявку, щоб отримати інструменти QB tools</div>
+            <form class="popup__form">
+                <div class="input__wrap">
+                    <input class="input-name popup-input" type="text" placeholder="Ваше ім’я">
+                    <span class="red-star">*</span>
+                </div>
+                <div class="input__wrap">
+                    <input class="input-tel popup-input" type="tel" id="phone-4" placeholder="Ваш номер телефону">
+                    <span class="red-star-2">*</span>
+                </div>
+            </form>
+            <div class="standart-btn popup__btn-2">Залишити заявку</div>
+        </div>
+    </div>
+</div>
+
+<script src="/build/js/intlTelInput.js"></script>
+<script type="module" src="/js/main.min.js"></script>
+<script>
+
+</script>
+</body>
+
+</html>
