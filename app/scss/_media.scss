@@ -109,9 +109,13 @@
         cursor: pointer;
         display: block;
     }
+    .select-arrow{
+        margin-top: 0;
+    }
     .select.mobile{
         margin-right: 20px;
-        display: block;
+        display: flex;
+        align-items: center;
         & .select__curent{
             color: $dark-color;
         }
@@ -175,6 +179,13 @@
 }
 
 @media(max-width: 470px){
+    .select.mobile{
+        margin-right: 5px;
+    }
+    .select-body.mobile.mobile{
+        right: 40px;
+        top: 63px;
+    }
     .header__logo{
         max-width: 90px;
         margin-right: 0;
@@ -303,14 +314,13 @@
     }
 }
 
-@media(max-width: 1115px){
+@media(max-width: 1170px){
     .top__content{
         width: 100%;
     }
     .top__title{
         font-size: 35px;
         line-height: 36px;
-
     }
     .top__subtitle{
         font-size: 24px;
@@ -326,6 +336,33 @@
     }
     .top__form{
         width: 571px;
+    }
+    .top__btn{
+        right: 145px;
+    }
+}
+
+@media(max-width: 1140px){
+    .top__img.big-img{
+        width: 600px !important;
+        max-width: 600px!important;
+    }
+}
+
+@media(max-width: 1060px){
+    .top__img.big-img{
+        width: 550px !important;
+        max-width: 550px!important;
+    }
+}
+
+@media(max-width: 950px){
+    .top__img.big-img{
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+    .top__description {
+        margin-top: 15px;
     }
 }
 
@@ -1369,16 +1406,28 @@
 }
 
 
-
-
-
-
+@media(max-width: 950px){
+h2.cards__title{
+    font-size: 25px;
+    line-height: 30px;
+}
+}
+@media(max-width: 550px) {
+    .top__text-wrapper {
+        height: 50px;
+    }
+}
 
 
 @media(max-width: 750px){
     .seo__footer-title{
         font-size: 25px;
         line-height: 30px;
+    }
+}
+@media(max-width: 1230px){
+    .top__img{
+        width: 100%!important;
     }
 }
 
@@ -1414,3 +1463,83 @@
 
 
 //Description Card FOR DOWNOLOAD
+
+
+@media(max-width: 1230px){
+    .top__img.big-img{
+        width: 700px!important;
+    }
+}
+
+@media(max-width: 700px){
+.select-body.mobile{
+        right: 215px;
+        top: 60px;
+}
+}
+
+@media(max-width: 1040px){
+    .top__text-wrapper {
+        height: 57px;
+    }
+}
+
+
+
+@media(max-width: 950px){
+    .cards__title{
+        margin-bottom: 20px;
+    }
+    .cards__card-title{
+        font-size: 20px;
+    }
+    .top__form.mobile {
+        .iti--allow-dropdown input[type=tel] {
+            padding-left: 42%;
+            padding-right: 0;
+            text-align: left;
+        }
+
+        .iti__selected-flag {
+            padding-left: 0 !important;
+        }
+
+        .iti__flag-container {
+            left: 34% !important;
+        }
+    }
+}
+
+
+@media(max-width: 520px){
+    .top__form.mobile {
+        .iti--allow-dropdown input[type=tel] {
+            padding-left: 40%;
+            padding-right: 0;
+            text-align: left;
+        }
+
+        .iti__selected-flag {
+            padding-left: 0 !important;
+        }
+
+        .iti__flag-container {
+            left: 30% !important;
+        }
+    }
+}
+
+@media(max-width: 400px){
+    .top__form.mobile {
+        .iti--allow-dropdown input[type=tel] {
+            padding-left: 37%;
+            padding-right: 0;
+            text-align: left;
+        }
+
+        .iti__flag-container {
+            left: 25% !important;
+        }
+    }
+}
+

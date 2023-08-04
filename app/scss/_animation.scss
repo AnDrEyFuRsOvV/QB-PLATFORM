@@ -1,972 +1,972 @@
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//.top__content.element-animation{transition: .8s;
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(20%);
-//    transition: .8s;
-//}
-//
-//.top__content.element-show{transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateY(0);
-//}
-//
-//.top__img.element-animation{transition: .8s;
-//    transform: translateX(10%);
-//    opacity: 0;
-//    visibility: visible;
-//}
-//
-//.top__img.element-show{transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    transform: translateX(0);
-//}
-//
-//.container-fluid.element-animation{transition: .8s;
-//    opacity: 0;
-//    visibility: visible;
-//}
-//.container-fluid.element-show{transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//}
-//
-//
-//.header__container.element-animation{transition: .8s;
-//    opacity: 0;
-//    visibility: visible;
-//}
-//.header__container.element-show{transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//}
-//
-//.cards__title.element-animation{transition: .8s;
-//    opacity: 0;
-//    visibility: visible;
-//    transform: translateY(20%);
-//}
-//
-//.cards__title.element-show{
-//    transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateY(0);
-//}
-//
-//.cards__card.element-animation{
-//    &:first-child{
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(2){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(3){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(4){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(5){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(6){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(7){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(8){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//    &:nth-child(9){
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(10%);
-//    }
-//}
-//
-//
-//.cards__card.element-show{
-//    &:first-child{
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateX(0%);
-//    }
-//    &:nth-child(2){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateY(0%);
-//    }
-//    &:nth-child(3){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateX(0%);
-//    }
-//    &:nth-child(4){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateY(0%);
-//    }
-//    &:nth-child(5){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateX(0%);
-//    }
-//    &:nth-child(6){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateY(0%);
-//    }
-//    &:nth-child(7){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateX(0%);
-//    }
-//    &:nth-child(8){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateY(0%);
-//    }
-//    &:nth-child(9){
-//        transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateX(0%);
-//    }
-//}
-//
-//.partners.element-animation{
-//    transition: .8s;
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(15%);
-//}
-//.contact.element-animation{transition: .8s;
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(15%);
-//}
-//
-//.partners.element-show{transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateY(0);
-//    transition: 1s;
-//}
-//.contact.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateY(0);
-//    transition: 1s;
-//}
-//
-//
-//.hear__box.element-animation{transition: .8s;
-//    &:first-child{
-//        opacity: 0;
-//        visibility: hidden;transition: .8s;
-//        transform: translateX(-20%);
-//    }
-//    &:last-child{
-//        opacity: 0;
-//        visibility: hidden;
-//        transform: translateY(15%);transition: .8s;
-//    }
-//}
-//
-//.hear__box.element-show{
-//    &:first-child{transition: .8s;
-//        opacity: 1;
-//        visibility: visible;
-//        transform: translateX(0);
-//        transition: .8s;
-//    }
-//    &:last-child{
-//        opacity: 1;transition: .8s;
-//        visibility: visible;
-//        transform: translateY(0);
-//        transition: .8s;
-//    }
-//}
-//
-//.steps__item.element-animation{
-//    &:first-child{
-//        opacity: 0;transition: .8s;
-//        visibility: hidden;
-//        &::before{
-//            opacity: 0;transition: .8s;
-//            visibility: hidden;
-//            transform: translateX(-20%);
-//        }
-//    }
-//    &:nth-child(2){
-//        opacity: 0;transition: .8s;
-//        visibility: hidden;
-//        &::before{
-//            opacity: 0;
-//            visibility: hidden;transition: .8s;
-//            transform: translateX(-20%);
-//        }
-//    }
-//    &:nth-child(3){
-//        opacity: 0;
-//        visibility: hidden;
-//        &::before{transition: .8s;
-//            opacity: 0;
-//            visibility: hidden;
-//            transform: translateX(-20%);
-//        }
-//    }
-//    &:nth-child(4){
-//        opacity: 0;
-//        visibility: hidden;transition: .8s;
-//    }
-//}
-//
-//
-//
-//.steps__item.element-show{
-//    &:first-child{
-//        opacity: 1;
-//        visibility: visible;transition: .8s;
-//        transition: .6s;
-//        &::before{
-//            transition: .8s;
-//            opacity: 1;
-//            visibility: visible;transition: .8s;
-//            transform: translateX(0);
-//        }
-//    }
-//    &:nth-child(2){
-//        transition: .8s;
-//        opacity: 1;transition: .8s;
-//        visibility: visible;
-//        &::before{
-//            transition: .9s;
-//            opacity: 1;
-//            visibility: visible;transition: .8s;
-//            transform: translateX(0);
-//        }
-//    }
-//    &:nth-child(3){
-//        transition: 1s;
-//        opacity: 1;transition: .8s;
-//        visibility: visible;
-//        &::before{
-//            transition: 1s;
-//            opacity: 1;
-//            visibility: visible;
-//            transform: translateX(0);
-//        }
-//    }
-//    &:nth-child(4){
-//        transition: 1.2s;
-//        opacity: 1;transition: .8s;
-//        visibility: visible;
-//    }
-//}
-//
-//.steps__title.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//    transform: translateY(15%);
-//}
-//
-//.steps__title.element-show{
-//    transition: .8s;
-//    opacity: 1;
-//    visibility: visible;transition: .8s;
-//    transform: translateY(0);
-//}
-//
-//.buisnes__title.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//    transform: translateY(15%);
-//}
-//
-//.buisnes__title.element-show{
-//    transition: .8s;
-//    opacity: 1;transition: .8s;
-//    visibility: visible;
-//    transform: translateY(0);
-//}
-//
-//.buisnes__inner.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(15%);transition: .8s;
-//}
-//
-//.buisnes__inner.element-show{
-//    transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateY(0);
-//}
-//
-//.buisnes__image.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//}
-//
-//.buisnes__image.element-show{
-//    transition: .8s;
-//    opacity: 1;
-//    visibility: visible;
-//}
-//
-//
-//.yes-no__title.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//    transform: translateX(-20%);
-//}
-//
-//.bg-span.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//    transform: translateX(20%);
-//}
-//
-//.yes-no__item.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(20%);transition: .8s;
-//}
-//
-//
-//.yes-no__title.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    transform: translateX(0);transition: .8s;
-//}
-//
-//.bg-span.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateX(0);
-//    transition: .8s;
-//}
-//
-//.yes-no__item.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transform: translateY(0);
-//    transition: .8s;
-//}
-//
-//
-//.yes-no__text-descr.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateX(-20%);transition: .8s;
-//    &.chose-no{
-//        transform: translateX(20%);transition: .8s;
-//    }
-//}
-//
-//
-//.yes-no__sub-title.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(15%);transition: .8s;
-//}
-//
-//.yes-no__works.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(-15%);transition: .8s;
-//}
-//
-//.yes-no__img-choose.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//    &:first-child{
-//        transform: translateX(-20%);transition: .8s;
-//    }
-//    &.chose-no{
-//        transform: translateX(20%);transition: .8s;
-//    }
-//}
-//
-//.arrow-1.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(-15%);transition: .8s;
-//}
-//
-//.arrow-2.element-animation{
-//    opacity: 0;
-//    visibility: hidden;transition: .8s;
-//    transform: translateY(-15%);
-//}
-//
-//.yes-no__result.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(20%);transition: .8s;
-//}
-//
-//
-//
-//.yes-no__sub-title.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;transition: .8s;
-//    transform: translateY(0);
-//}
-//
-//.yes-no__works.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    transform: translateY(0);transition: .8s;
-//}
-//
-//.yes-no__img-choose.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    &:first-child{
-//        transform: translateX(0);
-//    }
-//    &.chose-no{
-//        transform: translateX(0);
-//    }
-//}
-//
-//.arrow-1.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    transform: translateY(0);
-//}
-//
-//.arrow-2.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    transform: translateY(0);
-//}
-//
-//.yes-no__result.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//    transform: translateY(0);
-//}
-//
-//
-//.yes-no__text-descr.element-show{
-//    opacity: 1;
-//    transition: .8s;
-//    visibility: visible;
-//    transform: translateX(0);
-//    &.chose-no{
-//        transform: translateX(0);
-//    }
-//}
-//
-//
-//.opportunities__item.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(15%);
-//}
-//
-//.qr-code__img.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//}
-//
-//.qr-code__content.element-animation{
-//    opacity: 0;
-//    visibility: hidden;
-//    transform: translateY(15%);
-//}
-//
-//.qr-code__img.element-show{
-//    opacity: 1;
-//    visibility: visible;
-//    transition: .8s;
-//}
-//
-//.qr-code__content.element-show{
-//    opacity: 1;
-//    transition: .8s;
-//    visibility: visible;
-//    transform: translateY(0);
-//}
-//
-//.opportunities__item.element-show{
-//    opacity: 1;
-//    transition: .8s;
-//    visibility: visible;
-//    transform: translateY(0);
-//}
-//
-//
-//// .container-fluid.element-animation{
-////     visibility: hidden;
-////     opacity: 0;
-////     transform: translateY(-50%);
-//// }
-//
-//// .header__container.element-animation{
-////     visibility: hidden;
-////     opacity: 0;
-////     transform: translateY(-20%);
-//// }
-//
-//// .top__title.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(20%);
-//// }
-//
-//// .top__subtitle.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(30%);
-//// }
-//
-//// .top__description.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(30%);
-//// }
-//
-//// .top__form.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(30%);
-//// }
-//// .top__form-descr.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(30px);
-//// }
-//
-//// .top__img.element-animation{
-////     transform: translateX(10%);
-////     opacity: 0;
-////     visibility: visible;
-//// }
-//
-//// .container-fluid.element-show{
-////     opacity: 1;
-////     visibility: visible;
-////     transition: .7s;
-////     transform: translateY(0);
-//// }
-//
-//// .header__container.element-show{
-////     opacity: 1;
-////     visibility: visible;
-////     transition: .7s;
-////     transform: translateY(0);
-//// }
-//
-//// .top__title.element-show{
-////     opacity: 1;
-////     transition: .8s;
-////     visibility: visible;
-////     transform: translateY(0);
-//// }
-//
-//// .top__subtitle.element-show{
-////      opacity: 1;
-////      transition: .8s;
-////     visibility: visible;
-////     transform: translateY(0);
-//// }
-//
-//// .top__description.element-show{
-////      opacity: 1;
-////      transition: .8s;
-////     visibility: visible;
-////     transform: translateY(0);
-//// }
-//
-//// .top__form.element-show{
-////     opacity: 1;
-////     transition: .8s;
-////     visibility: visible;
-////     transform: translateY(0);
-//// }
-//// .top__form-descr.element-show{
-////      opacity: 1;
-////     transition: 1s;
-////     visibility: visible;
-////     transform: translateY(0);
-//// }
-//
-//// .top__img.element-show{
-////     opacity: 1;
-////     visibility: visible;
-////     transition: 1s;
-////     transform: translateX(0);
-//// }
-//
-//
-//
-//// .cards__title.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(15%);
-//// }
-//
-//// .cards__card.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-//// }
-//
-//
-//// .cards__title.element-show{
-////     opacity: 1;
-////     visibility: visible;
-////     transform: translateY(0);
-////     transition: .5s;
-//// }
-//
-//// .cards__card.element-show{
-////         opacity: 1;
-////         visibility: visible;
-////         transition: 2s;
-//// }
-//
-//
-//// .partners.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(15%);
-//// }
-//// .contact.element-animation{
-////     opacity: 0;
-////     visibility: hidden;
-////     transform: translateY(15%);
-//// }
-//
-//// .partners.element-show{
-////     opacity: 1;
-////     visibility: visible;
-////     transform: translateY(0);
-////     transition: 1s;
-//// }
-//// .contact.element-show{
-////     opacity: 1;
-////     visibility: visible;
-////     transform: translateY(0);
-////     transition: 1s;
-//// }
-//
-//
-//
-//// .preloader__logoqb{
-////     max-width: 375px;
-////     width: 100%;
-//
-//// }
-//
-//// .preloader {
-////     position: fixed;
-////     top: 0;
-////     left: 0;
-////     width: 100%;
-////     height: 100%;
-////     background-color: #fff;
-////     z-index: 9999;
-////     opacity: 1;
-////     visibility:  visible;
-////     transition: all .1s;
-////     &.done{
-////         // opacity: 0;
-////         // visibility: hidden;
-////     }
-//// }
-//// .preloader__content {
-////     min-width: 375px;
-////     padding: 0 15px;
-////     position: absolute;
-////     left: 50%;
-////     top: 50%;
-////     transform: translate(-50%, -50%);
-////     display: flex;
-////     flex-direction: column;
-////     align-items: center;
-//// }
-//
-//// .preloader__svg{
-////     position: relative;
-////     width: 163px;
-////     height: 163px;
-//// }
-//
-//// .svg-1{
-////     position: absolute;
-////     left: 50%;
-////     top: 50%;
-////     transform: translate(-50%, -50%);
-//// }
-//// .svg-2{
-////     position: absolute;
-////     left: 50%;
-////     top: 50%;
-////     transform: translate(-50%, -50%);
-//// }
-//// .svg-3{
-////     position: absolute;
-////     left: 50%;
-////     top: 50%;
-////     transform: translate(-50%, -50%);
-//// }
-//
-//// .logo {
-////     width: 300px;
-////     margin-bottom: 20px;
-//// }
-//// .preloader__percent {
-////     margin-bottom: 12px;
-////     @include text-style($orange-color, 34px, 41px, 700);
-//// }
-//// .percentt {
-////     margin-left: 5px;
-////     @include text-style($orange-color, 34px, 41px, 700);
-////     margin-bottom: 23px;
-//// }
-//// .preloader__lines {
-////     border-radius: 1000px;
-////     background-color: $grayw;
-////     width: 400px;
-////     height: 13px;
-////     position: relative;
-//// }
-//// .preloader__lines.percent {
-////     background-color: $orange-color;
-////     width: 40px;
-////     height: 13px;
-////     position: absolute;
-//// }
-//// .preloader__title{
-////     @include text-style($orange-color, 34px, 41px, 700);
-////     text-transform: uppercase;
-//// }
-//
-//
-//// .preloader__box{
-////     display: flex;
-////     align-items: center;
-//// }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//// JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS
-//// function onEntry(entry) {
-////   entry.forEach((change) => {
-////     if (change.isIntersecting) {
-////       change.target.classList.add("element-show");
-////     } else {
-////       // change.target.classList.remove("element-show");
-////     }
-////   });
-//// }
-//
-//// let options = {
-////   threshold: [0.5],
-//// };
-//// let observer = new IntersectionObserver(onEntry, options);
-//// let elements = document.querySelectorAll(".element-animation");
-//
-//// for (let elm of elements) {
-////   observer.observe(elm);
-//// }
-//
-//// function onEntry(entry) {
-////   entry.forEach((change) => {
-////     if (change.isIntersecting) {
-////       change.target.classList.add("element-show-2");
-////     } else {
-////       // change.target.classList.remove("element-show");
-////     }
-////   });
-//// }
-//
-//// let optionsS = {
-////   threshold: [0.7],
-//// };
-//// let observerR = new IntersectionObserver(onEntry, optionsS);
-//// let elementsS = document.querySelectorAll(".element-animation-2");
-//
-//// for (let elm of elementsS) {
-////   observerR.observe(elm);
-//// }
-//
-//// function onEntry(entry) {
-////   entry.forEach((change) => {
-////     if (change.isIntersecting) {
-////       change.target.classList.add("element-show");
-////     } else {
-////       // change.target.classList.remove("element-show");
-////     }
-////   });
-//// }
-//
-//// let options = {
-////   threshold: [0.5],
-//// };
-//// let observer = new IntersectionObserver(onEntry, options);
-//// let elements = document.querySelectorAll(".element-animation");
-//
-//// for (let elm of elements) {
-////   observer.observe(elm);
-//// }
-//
-//// let images = document.images;
-//// let images_total_count = images.length;
-//// let images_loaded_count = 0;
-//// let preloader = document.getElementById("page-preloader");
-//
-//// for (let i = 0; i < images_total_count; i++) {
-////   let image_clone = new Image();
-////   image_clone.onload = image_loaded;
-////   image_clone.onerror = image_loaded;
-////   image_clone.src = images[i].src;
-//// }
-//
-//// function image_loaded() {
-////   images_loaded_count++;
-//
-////   if (images_loaded_count >= images_total_count) {
-////     setTimeout(function () {
-////       if (!preloader.classList.contains("done")) {
-////         preloader.classList.add("done");
-////       }
-//
-////       setTimeout(function () {
-////         function onEntry(entry) {
-////           entry.forEach((change) => {
-////             if (change.isIntersecting) {
-////               change.target.classList.add("element-show");
-////             } else {
-////               // change.target.classList.remove("element-show");
-////             }
-////           });
-////         }
-//
-////         let options = {
-////           threshold: [0.5],
-////         };
-////         let observer = new IntersectionObserver(onEntry, options);
-////         let elements = document.querySelectorAll(".element-animation");
-//
-////         for (let elm of elements) {
-////           observer.observe(elm);
-////         }
-////       }, 100);
-//
-////       setTimeout(function () {
-////         function onEntry(entry) {
-////           entry.forEach((change) => {
-////             if (change.isIntersecting) {
-////               change.target.classList.add("element-show-2");
-////             } else {
-////               // change.target.classList.remove("element-show");
-////             }
-////           });
-////         }
-//
-////         let options = {
-////           threshold: [0.7],
-////         };
-////         let observerR = new IntersectionObserver(onEntry, options);
-////         let elementsS = document.querySelectorAll(".element-animation-2");
-//
-////         for (let elm of elementsS) {
-////           observerR.observe(elm);
-////         }
-////       }, 100);
-////     }, 1000);
-////   }
-//// }
-//// JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS
-//
-//
-//
-//
-//
-//
-//// .element-animation
-//
-//// .element-show
-//
-//@media(max-width: 1300px){
-//    .top__img.element-animation{
-//        transform: translateX(0);
-//        transform: translateY(15%);
-//    }
-//    .top__img.element-show{
-//        transform: translateY(0);
-//    }
-//}
+
+
+
+
+
+
+
+
+
+
+.top__content.element-animation{transition: .8s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: .8s;
+}
+
+.top__content.element-show{transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.top__img.element-animation{transition: .8s;
+    transform: translateX(10%);
+    opacity: 0;
+    visibility: visible;
+}
+
+.top__img.element-show{transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    transform: translateX(0);
+}
+
+.container-fluid.element-animation{transition: .8s;
+    opacity: 0;
+    visibility: visible;
+}
+.container-fluid.element-show{transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+}
+
+
+.header__container.element-animation{transition: .8s;
+    opacity: 0;
+    visibility: visible;
+}
+.header__container.element-show{transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+}
+
+.cards__title.element-animation{transition: .8s;
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(20%);
+}
+
+.cards__title.element-show{
+    transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cards__card.element-animation{
+    &:first-child{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(2){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(3){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(4){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(5){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(6){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(7){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(8){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+    &:nth-child(9){
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+    }
+}
+
+
+.cards__card.element-show{
+    &:first-child{
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    &:nth-child(2){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+    &:nth-child(3){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    &:nth-child(4){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+    &:nth-child(5){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    &:nth-child(6){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+    &:nth-child(7){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+    &:nth-child(8){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+    &:nth-child(9){
+        transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0%);
+    }
+}
+
+.partners.element-animation{
+    transition: .8s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15%);
+}
+.contact.element-animation{transition: .8s;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15%);
+}
+
+.partners.element-show{transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 1s;
+}
+.contact.element-show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: 1s;
+}
+
+
+.hear__box.element-animation{transition: .8s;
+    &:first-child{
+        opacity: 0;
+        visibility: hidden;transition: .8s;
+        transform: translateX(-20%);
+    }
+    &:last-child{
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15%);transition: .8s;
+    }
+}
+
+.hear__box.element-show{
+    &:first-child{transition: .8s;
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+        transition: .8s;
+    }
+    &:last-child{
+        opacity: 1;transition: .8s;
+        visibility: visible;
+        transform: translateY(0);
+        transition: .8s;
+    }
+}
+
+.steps__item.element-animation{
+    &:first-child{
+        opacity: 0;transition: .8s;
+        visibility: hidden;
+        &::before{
+            opacity: 0;transition: .8s;
+            visibility: hidden;
+            transform: translateX(-20%);
+        }
+    }
+    &:nth-child(2){
+        opacity: 0;transition: .8s;
+        visibility: hidden;
+        &::before{
+            opacity: 0;
+            visibility: hidden;transition: .8s;
+            transform: translateX(-20%);
+        }
+    }
+    &:nth-child(3){
+        opacity: 0;
+        visibility: hidden;
+        &::before{transition: .8s;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-20%);
+        }
+    }
+    &:nth-child(4){
+        opacity: 0;
+        visibility: hidden;transition: .8s;
+    }
+}
+
+
+
+.steps__item.element-show{
+    &:first-child{
+        opacity: 1;
+        visibility: visible;transition: .8s;
+        transition: .6s;
+        &::before{
+            transition: .8s;
+            opacity: 1;
+            visibility: visible;transition: .8s;
+            transform: translateX(0);
+        }
+    }
+    &:nth-child(2){
+        transition: .8s;
+        opacity: 1;transition: .8s;
+        visibility: visible;
+        &::before{
+            transition: .9s;
+            opacity: 1;
+            visibility: visible;transition: .8s;
+            transform: translateX(0);
+        }
+    }
+    &:nth-child(3){
+        transition: 1s;
+        opacity: 1;transition: .8s;
+        visibility: visible;
+        &::before{
+            transition: 1s;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    }
+    &:nth-child(4){
+        transition: 1.2s;
+        opacity: 1;transition: .8s;
+        visibility: visible;
+    }
+}
+
+.steps__title.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+    transform: translateY(15%);
+}
+
+.steps__title.element-show{
+    transition: .8s;
+    opacity: 1;
+    visibility: visible;transition: .8s;
+    transform: translateY(0);
+}
+
+.buisnes__title.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+    transform: translateY(15%);
+}
+
+.buisnes__title.element-show{
+    transition: .8s;
+    opacity: 1;transition: .8s;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.buisnes__inner.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15%);transition: .8s;
+}
+
+.buisnes__inner.element-show{
+    transition: .8s;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.buisnes__image.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+}
+
+.buisnes__image.element-show{
+    transition: .8s;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.yes-no__title.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+    transform: translateX(-20%);
+}
+
+.bg-span.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+    transform: translateX(20%);
+}
+
+.yes-no__item.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);transition: .8s;
+}
+
+
+.yes-no__title.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    transform: translateX(0);transition: .8s;
+}
+
+.bg-span.element-show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: .8s;
+}
+
+.yes-no__item.element-show{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: .8s;
+}
+
+
+.yes-no__text-descr.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-20%);transition: .8s;
+    &.chose-no{
+        transform: translateX(20%);transition: .8s;
+    }
+}
+
+
+.yes-no__sub-title.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15%);transition: .8s;
+}
+
+.yes-no__works.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15%);transition: .8s;
+}
+
+.yes-no__img-choose.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+    &:first-child{
+        transform: translateX(-20%);transition: .8s;
+    }
+    &.chose-no{
+        transform: translateX(20%);transition: .8s;
+    }
+}
+
+.arrow-1.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15%);transition: .8s;
+}
+
+.arrow-2.element-animation{
+    opacity: 0;
+    visibility: hidden;transition: .8s;
+    transform: translateY(-15%);
+}
+
+.yes-no__result.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);transition: .8s;
+}
+
+
+
+.yes-no__sub-title.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;transition: .8s;
+    transform: translateY(0);
+}
+
+.yes-no__works.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    transform: translateY(0);transition: .8s;
+}
+
+.yes-no__img-choose.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    &:first-child{
+        transform: translateX(0);
+    }
+    &.chose-no{
+        transform: translateX(0);
+    }
+}
+
+.arrow-1.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    transform: translateY(0);
+}
+
+.arrow-2.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    transform: translateY(0);
+}
+
+.yes-no__result.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+    transform: translateY(0);
+}
+
+
+.yes-no__text-descr.element-show{
+    opacity: 1;
+    transition: .8s;
+    visibility: visible;
+    transform: translateX(0);
+    &.chose-no{
+        transform: translateX(0);
+    }
+}
+
+
+.opportunities__item.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15%);
+}
+
+.qr-code__img.element-animation{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.qr-code__content.element-animation{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15%);
+}
+
+.qr-code__img.element-show{
+    opacity: 1;
+    visibility: visible;
+    transition: .8s;
+}
+
+.qr-code__content.element-show{
+    opacity: 1;
+    transition: .8s;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.opportunities__item.element-show{
+    opacity: 1;
+    transition: .8s;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+// .container-fluid.element-animation{
+//     visibility: hidden;
+//     opacity: 0;
+//     transform: translateY(-50%);
+// }
+
+// .header__container.element-animation{
+//     visibility: hidden;
+//     opacity: 0;
+//     transform: translateY(-20%);
+// }
+
+// .top__title.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(20%);
+// }
+
+// .top__subtitle.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30%);
+// }
+
+// .top__description.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30%);
+// }
+
+// .top__form.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30%);
+// }
+// .top__form-descr.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(30px);
+// }
+
+// .top__img.element-animation{
+//     transform: translateX(10%);
+//     opacity: 0;
+//     visibility: visible;
+// }
+
+// .container-fluid.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transition: .7s;
+//     transform: translateY(0);
+// }
+
+// .header__container.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transition: .7s;
+//     transform: translateY(0);
+// }
+
+// .top__title.element-show{
+//     opacity: 1;
+//     transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__subtitle.element-show{
+//      opacity: 1;
+//      transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__description.element-show{
+//      opacity: 1;
+//      transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__form.element-show{
+//     opacity: 1;
+//     transition: .8s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+// .top__form-descr.element-show{
+//      opacity: 1;
+//     transition: 1s;
+//     visibility: visible;
+//     transform: translateY(0);
+// }
+
+// .top__img.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transition: 1s;
+//     transform: translateX(0);
+// }
+
+
+
+// .cards__title.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(15%);
+// }
+
+// .cards__card.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+// }
+
+
+// .cards__title.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateY(0);
+//     transition: .5s;
+// }
+
+// .cards__card.element-show{
+//         opacity: 1;
+//         visibility: visible;
+//         transition: 2s;
+// }
+
+
+// .partners.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(15%);
+// }
+// .contact.element-animation{
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(15%);
+// }
+
+// .partners.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateY(0);
+//     transition: 1s;
+// }
+// .contact.element-show{
+//     opacity: 1;
+//     visibility: visible;
+//     transform: translateY(0);
+//     transition: 1s;
+// }
+
+
+
+// .preloader__logoqb{
+//     max-width: 375px;
+//     width: 100%;
+
+// }
+
+// .preloader {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: #fff;
+//     z-index: 9999;
+//     opacity: 1;
+//     visibility:  visible;
+//     transition: all .1s;
+//     &.done{
+//         // opacity: 0;
+//         // visibility: hidden;
+//     }
+// }
+// .preloader__content {
+//     min-width: 375px;
+//     padding: 0 15px;
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+
+// .preloader__svg{
+//     position: relative;
+//     width: 163px;
+//     height: 163px;
+// }
+
+// .svg-1{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// .svg-2{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+// .svg-3{
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+// .logo {
+//     width: 300px;
+//     margin-bottom: 20px;
+// }
+// .preloader__percent {
+//     margin-bottom: 12px;
+//     @include text-style($orange-color, 34px, 41px, 700);
+// }
+// .percentt {
+//     margin-left: 5px;
+//     @include text-style($orange-color, 34px, 41px, 700);
+//     margin-bottom: 23px;
+// }
+// .preloader__lines {
+//     border-radius: 1000px;
+//     background-color: $grayw;
+//     width: 400px;
+//     height: 13px;
+//     position: relative;
+// }
+// .preloader__lines.percent {
+//     background-color: $orange-color;
+//     width: 40px;
+//     height: 13px;
+//     position: absolute;
+// }
+// .preloader__title{
+//     @include text-style($orange-color, 34px, 41px, 700);
+//     text-transform: uppercase;
+// }
+
+
+// .preloader__box{
+//     display: flex;
+//     align-items: center;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show");
+//     } else {
+//       // change.target.classList.remove("element-show");
+//     }
+//   });
+// }
+
+// let options = {
+//   threshold: [0.5],
+// };
+// let observer = new IntersectionObserver(onEntry, options);
+// let elements = document.querySelectorAll(".element-animation");
+
+// for (let elm of elements) {
+//   observer.observe(elm);
+// }
+
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show-2");
+//     } else {
+//       // change.target.classList.remove("element-show");
+//     }
+//   });
+// }
+
+// let optionsS = {
+//   threshold: [0.7],
+// };
+// let observerR = new IntersectionObserver(onEntry, optionsS);
+// let elementsS = document.querySelectorAll(".element-animation-2");
+
+// for (let elm of elementsS) {
+//   observerR.observe(elm);
+// }
+
+// function onEntry(entry) {
+//   entry.forEach((change) => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add("element-show");
+//     } else {
+//       // change.target.classList.remove("element-show");
+//     }
+//   });
+// }
+
+// let options = {
+//   threshold: [0.5],
+// };
+// let observer = new IntersectionObserver(onEntry, options);
+// let elements = document.querySelectorAll(".element-animation");
+
+// for (let elm of elements) {
+//   observer.observe(elm);
+// }
+
+// let images = document.images;
+// let images_total_count = images.length;
+// let images_loaded_count = 0;
+// let preloader = document.getElementById("page-preloader");
+
+// for (let i = 0; i < images_total_count; i++) {
+//   let image_clone = new Image();
+//   image_clone.onload = image_loaded;
+//   image_clone.onerror = image_loaded;
+//   image_clone.src = images[i].src;
+// }
+
+// function image_loaded() {
+//   images_loaded_count++;
+
+//   if (images_loaded_count >= images_total_count) {
+//     setTimeout(function () {
+//       if (!preloader.classList.contains("done")) {
+//         preloader.classList.add("done");
+//       }
+
+//       setTimeout(function () {
+//         function onEntry(entry) {
+//           entry.forEach((change) => {
+//             if (change.isIntersecting) {
+//               change.target.classList.add("element-show");
+//             } else {
+//               // change.target.classList.remove("element-show");
+//             }
+//           });
+//         }
+
+//         let options = {
+//           threshold: [0.5],
+//         };
+//         let observer = new IntersectionObserver(onEntry, options);
+//         let elements = document.querySelectorAll(".element-animation");
+
+//         for (let elm of elements) {
+//           observer.observe(elm);
+//         }
+//       }, 100);
+
+//       setTimeout(function () {
+//         function onEntry(entry) {
+//           entry.forEach((change) => {
+//             if (change.isIntersecting) {
+//               change.target.classList.add("element-show-2");
+//             } else {
+//               // change.target.classList.remove("element-show");
+//             }
+//           });
+//         }
+
+//         let options = {
+//           threshold: [0.7],
+//         };
+//         let observerR = new IntersectionObserver(onEntry, options);
+//         let elementsS = document.querySelectorAll(".element-animation-2");
+
+//         for (let elm of elementsS) {
+//           observerR.observe(elm);
+//         }
+//       }, 100);
+//     }, 1000);
+//   }
+// }
+// JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS JS
+
+
+
+
+
+
+// .element-animation
+
+// .element-show
+
+@media(max-width: 1300px){
+    .top__img.element-animation{
+        transform: translateX(0);
+        transform: translateY(15%);
+    }
+    .top__img.element-show{
+        transform: translateY(0);
+    }
+}

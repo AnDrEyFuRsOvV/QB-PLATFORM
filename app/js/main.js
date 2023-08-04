@@ -195,72 +195,134 @@ $(document).ready(function () {
   select();
 });
 
+
+
+
+const typed = new Typed('#typeText', {
+  strings: ['<span>для автоматизації та зростання бізнесу</span>',  '<span>для збільшення продажів</span>', '<span>для ефективної комунікації з клієнтами</span>'],
+  typeSpeed: 30,
+  backSpeed: 30,
+  loop: true,
+  smartBackspace: true,
+});
+
+
+
+
+
+$(document).ready(function() {
+  // Функция для скрытия селект боди
+  function hideSelectBody() {
+    $('.select-body').removeClass('show');
+  }
+
+  // Обработчик клика по селекту
+  $('.select').on('click', function() {
+    $(this).siblings('.select-body').toggleClass('show');
+  });
+
+  // Обработчик клика по элементам селект боди
+  $('.select-item').on('click', function() {
+    const selectedLang = $(this).data('lang');
+    $(this).closest('.select-body').siblings('.select').find('.select-img').attr('src', `/images/lang/${selectedLang}.svg`);
+    hideSelectBody();
+  });
+
+  // Обработчик клика по другим элементам страницы
+  $(document).on('click', function(event) {
+    const targetElement = $(event.target);
+    if (!targetElement.closest('.select').length) {
+      hideSelectBody();
+    }
+  });
+});
+
+
+
+
+
+
+
+
 $(".partners__inner").slick({
+  slidesToShow: 9,
+  centerMode: true,
+  arrows: false,
+  initialSlide: 5,
+  speed: 3000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  cssEase: 'linear',
+  infinite: true,
+  swipeToSlide: true,
   responsive: [
     {
-      breakpoint: 9048,
-      settings: "unslick",
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+      }
     },
     {
-      breakpoint: 710,
+      breakpoint: 768,
       settings: {
-        infinite: true,
-        centerMode: true,
-        variableWidth: true,
-        mobileFirst: true,
-        mobileMaxWidth: 710,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 200, // Увеличьте значение для более длительной задержки между слайдами
-        speed: 2000, // Увеличьте значение для более плавной анимации
-        easing: "linear", // Попробуйте другие функции анимации, например "easeInOutCubic", "easeInOutQuart", etc.
-        pauseOnHover: false,
-      },
-    },
-  ],
+        slidesToShow: 3,
+      }
+    }
+  ]
 });
 
 $(".partners__inner-2").slick({
+  slidesToShow: 9,
+  centerMode: true,
+  arrows: false,
+  initialSlide: 5,
+  rtl: true,
+  speed: 3000,
+  autoplay: true,
+  autoplaySpeed: 0,
+  cssEase: 'linear',
+  infinite: true,
+  swipeToSlide: true,
   responsive: [
     {
-      breakpoint: 9048,
-      settings: "unslick",
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+      }
     },
     {
-      breakpoint: 710,
+      breakpoint: 768,
       settings: {
-        infinite: true,
-        centerMode: true,
-        variableWidth: true,
-        mobileFirst: true,
-        mobileMaxWidth: 710,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 200, // Увеличьте значение для более длительной задержки между слайдами
-        speed: 2000, // Увеличьте значение для более плавной анимации
-        easing: "linear", // Попробуйте другие функции анимации, например "easeInOutCubic", "easeInOutQuart", etc.
-        pauseOnHover: false,
-        rtl: true,
-      },
-    },
-  ],
+        slidesToShow: 3,
+      }
+    }
+  ]
 });
+
+
+
+
 
 var input = document.querySelector("#phone");
 window.intlTelInput(input, {
   initialCountry: "ua",
+  dropdownContainer: document.body,
 });
 var input = document.querySelector("#phone-2");
 window.intlTelInput(input, {
   initialCountry: "ua",
+  dropdownContainer: document.body,
+
 });
 var top = document.querySelector("#phone-3");
 window.intlTelInput(top, {
   initialCountry: "ua",
+  dropdownContainer: document.body,
 });
 var top = document.querySelector("#phone-4");
 window.intlTelInput(top, {
   initialCountry: "ua",
+  dropdownContainer: document.body,
 });
 
 var element = document.querySelector(".iti__selected-flag");
@@ -307,7 +369,7 @@ function onEntry(entry) {
 }
 
 let options = {
-  threshold: [0.5],
+  threshold: [0.1],
 };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll(".element-animation");
@@ -461,130 +523,77 @@ handleScroll();
 
 
 
-
+//
 // Обрабатываем событие скролла
 window.addEventListener('scroll', handleScroll);
 
 
-
-window.onload = function () {
-  const icons = document.querySelector('.icons-paralax');
-
-  const forIcons = 15;
-  const speed = 0.05;
-
-  let positionX = 0, positionY = 0;
-  let cordXprocent = 0, cordYprocent = 0; // Corrected the variable name here
-
-  function setMouseParallaxStyle() {
-    const distX = cordXprocent - positionX; // Corrected the variable name here
-    const distY = cordYprocent - positionY; // Corrected the variable name here
-
-    positionX = positionX + (distX * speed);
-    positionY = positionY + (distY * speed);
-
-    icons.style.cssText = `transform: translate(${positionX / forIcons}%, ${positionY / forIcons}%);`;
-  }
-
-  setMouseParallaxStyle();
-
-  document.addEventListener("mousemove", function (e) {
-    const documentWidth = document.body.offsetWidth;
-    const documentHeight = document.body.offsetHeight;
-
-    const cordX = e.pageX - documentWidth;
-    const cordY = e.pageY - documentHeight;
-
-    cordXprocent = cordX / documentWidth * 100;
-    cordYprocent = cordY / documentHeight * 100;
-
-    setMouseParallaxStyle();
-  });
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-// // PARALAX TOP SECTION
 //
 //
 // window.onload = function () {
-//   const paralax = document.querySelector('.paralax');
+//   const icons = document.querySelector('.icons-paralax');
 //
-//   if(paralax) {
-//     const icons = document.querySelector('.icons-paralax');
-//     const phone = document.querySelector('.phone-top');
+//   const forIcons = 15;
+//   const speed = 0.05;
 //
-//     const forIcons = 40;
-//     const forPhone = 20;
+//   let positionX = 0, positionY = 0;
+//   let cordXprocent = 0, cordYprocent = 0; // Corrected the variable name here
 //
-//     const speed =0.05;
+//   function setMouseParallaxStyle() {
+//     const distX = cordXprocent - positionX; // Corrected the variable name here
+//     const distY = cordYprocent - positionY; // Corrected the variable name here
 //
-//     let positionX = 0, positionY = 0;
-//     let coordXprocent = 0, coordYprocent = 0;
+//     positionX = positionX + (distX * speed);
+//     positionY = positionY + (distY * speed);
 //
-//     function setMouseParallaxStyle() {
-//       const distX = coordXprocent - positionY;
-//       const distY = coordYprocent - positionY;
-//
-//       positionX = positionX + (distX * spped);
-//       positionY = positionY + (distY * speed);
-//
-//       icons.style.cssText = `transform: translate(${positionX / forIcons}%,${positionY / forIcons}%);`
-//       phone.style.cssText = `transform: translate(${positionX / forPhone}%,${positionY / forPhone}%);`
-//     }
-//     setMouseParallaxStyle();
-//
-//     paralax.addEventListener("mousemove", function (e) {
-//       const paralaxWidth = paralax.offsetWidth;
-//       const paralaxHeight = paralax.offsetHeight;
-//
-//       const cordX = e.pageX - paralaxWidth;
-//       const cordY = e.pageY - paralaxHeight;
-//
-//       cordXprocent = cordX / paralaxWidth * 100;
-//       cordYprocent = cordY / paralaxHeight * 100;
-//     })
-//
-//     let thresholdSets = [];
-//     for (let i =0; i <= 1.0 i += 0.005) {
-//       thresholdSets.push(i)''
-//     }
-//     const callback = function (entries, observer) {
-//       const scrollTopProcent = window.pageYOffset / paralax.offsetHeight * 100;
-//       setParalaxItemsStyle(scrollTopProcent);
-//     }
-//     const observer = new IntersectionObserver(callback, {
-//       threshold: thresholdSets
-//     })
-//
-//     observer.observe(document.querySelector('.content'));
-//
-//     function setParallaxItemsStyle(scrollTopProcent){
-//       icons.style.cssText = `transform: translate(0% - ${scrollTopProcent / 9}%);`
-//       phone.style.cssText = `transform: translate(0% - ${scrollTopProcent / 6}%);`
-//     }
-//
-//
+//     icons.style.cssText = `transform: translate(${positionX / forIcons}%, ${positionY / forIcons}%);`;
 //   }
 //
-// }
+//   setMouseParallaxStyle();
+//
+//   document.addEventListener("mousemove", function (e) {
+//     const documentWidth = document.body.offsetWidth;
+//     const documentHeight = document.body.offsetHeight;
+//
+//     const cordX = e.pageX - documentWidth;
+//     const cordY = e.pageY - documentHeight;
+//
+//     cordXprocent = cordX / documentWidth * 100;
+//     cordYprocent = cordY / documentHeight * 100;
+//
+//     setMouseParallaxStyle();
+//   });
+// };
+//
+//
 
 
 
+
+
+
+
+
+
+const images = document.querySelectorAll("img");
+
+const callback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    entry.target.classList.add("fade-in");
+    observer.unobserve(entry.target);
+  });
+};
+
+const option = {
+  threshold: 0.7
+};
+
+const observ = new IntersectionObserver(callback, option);
+
+images.forEach((image) => observ.observe(image));
 
 
 
