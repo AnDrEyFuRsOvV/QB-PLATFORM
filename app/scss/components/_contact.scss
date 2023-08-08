@@ -1,0 +1,144 @@
+// Contact style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.contact {
+  &__inner {
+    padding: 50px 0 50px 37px;
+    margin-bottom: 150px;
+    background: $white-gray;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: flex;
+    max-width: 1170px;
+    margin: 100px auto;
+    width: 100%;
+    height: 450px;
+    position: relative;
+  }
+  // TODO I need to create new table
+  &__img-phone{
+    max-width: 597px;
+  }
+  &__box {
+    width: 526px;
+    & img{
+      position: absolute;
+      top: -149px;
+      // top: -500px;
+      right: 0;
+    }
+  }
+  &__title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &__descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+    margin-bottom: 30px;
+  }
+  &__input-name{
+    position: relative;
+    margin-bottom: 15px;
+  }
+  &__form {
+    width: 100%;
+    position: relative;
+    & input{
+      width: 100%;
+      max-width: 433px;
+      position: relative;
+      border: none;
+      background-color: $white-color;
+      transition: all .3s;
+      outline: none;
+      border-radius: 10px;
+      padding: 10px 20px;
+      position: relative;
+      @include text-style($dark-color, 16px, 27px, 400);
+      &::placeholder{
+        @include text-style($gray-2, 16px, 27px, 400);
+      }
+      &:hover{
+        background: $white-color;
+        outline: 1px solid $orange-color;
+      }
+      &:focus{
+        background: $white-color;
+        outline: 1px solid $orange-color;
+        caret-color: $orange-color;
+      }
+    }
+  }
+  &__btn{
+    margin-top: 25px;
+    width: 433px;
+    border: none;
+    outline: none;
+  }
+  &__polici {
+    margin-top: 7px;
+    @include text-style($dark-color, 12px, 15px, 400);
+
+  }
+  .link{
+    @include text-style($orange-color, 12px, 15px, 400);
+    text-decoration: underline;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+}
+
+
+.contact__input-wrap {
+  position: relative;
+  max-width: 433px;
+  width: 100%;
+}
+// .contact__input-name {
+// }
+.contact__red-star {
+  position: absolute;
+  top: 9px;
+  left: 105px;
+  @include text-style($red, 16px, 27px, 600);
+}
+// .contact__input-tel {
+// }
+.contact__red-star-2 {
+  position: absolute;
+  top: 9px;
+  left: 163px;
+  @include text-style($red, 16px, 27px, 600);
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------Contact style end
+
+
+
+.iti__selected-flag:hover{
+  background-color: transparent!important;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag{
+  background-color: transparent!important;
+}
+
+.iti__selected-flag{
+  padding-left: 20px!important;
+}
+
+#phone{
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+
+.contact__input-tel{
+  padding: 10px 58px!important;
+}
+.iti.iti--allow-dropdown{
+  width: 100%;
+}

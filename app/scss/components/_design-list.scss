@@ -1,0 +1,43 @@
+
+//  DESIGN-LIST style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.design-list {
+  display: flex;
+  background-color: $white-gray;
+  &__img {
+    max-width: 945px;
+  }
+  &__inner {
+    margin: 121px 0 121px 30px;
+    max-width: 570px;
+  }
+  &__title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+  &__number {
+    margin-right: 30px;
+    @include text-style($hover-btn-white, 62px, 76px, 700);
+    text-transform: uppercase;
+    max-width: 79px;
+    width: 100%;
+    text-align: center  ;
+  }
+  &__descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+    max-width: 470px;
+  }
+  &__descr-title {
+    @include text-style($orange-color, 16px, 27px, 500);
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- DESIGN-LIST style end

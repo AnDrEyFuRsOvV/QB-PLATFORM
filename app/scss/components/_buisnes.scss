@@ -1,0 +1,68 @@
+// BUISNES style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.buisnes {
+  position: relative;
+  z-index: 110;
+  margin-bottom: 150px;
+  &__box-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    &:last-child{
+      justify-content: center;
+      width: 100%;
+      padding-top: 80px;
+    }
+    &:nth-child(2){
+      max-width: 1094px;
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+    &:nth-child(1){
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+  }
+  &__title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__inner {
+    position: relative;
+
+  }
+
+  &__box {
+    background: $white-color;
+    box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.28);
+    border-radius: 30px;
+    padding: 30px;
+    z-index: 99;
+    max-width: 370px;
+    &:nth-child(2){
+      margin-top: -80px;
+    }
+  }
+  &__descr {
+    @include text-style($dark-color, 16px, 26px, 500);
+    max-width: 310px;
+  }
+  &__img {
+    & img{
+      max-width: 516px;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -30%);
+      z-index: 1;
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------BUISNES style end

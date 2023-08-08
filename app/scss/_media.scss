@@ -1,13 +1,10 @@
 // MEDIA FOR HEADER
 @media(max-width: 1060px){
-
-
-
     .header__burger-acordeon-body{
-        padding-top: 20px;
+        //padding-top: 20px;
     }
     .header__burger-acordeon.open .header__burger-acordeon-body{
-        padding-top: 20px;
+        //padding-top: 20px;
     }
     .header__burger-title{
         font-size: 22px;
@@ -49,7 +46,7 @@
         }
     }
     .header__inner.menu{
-        position: relative;
+        position: absolute;
     }
     .header__nav{
         position: relative;
@@ -143,10 +140,10 @@
 }
 @media(max-width: 768px){
     .header__burger-acordeon-body{
-        padding-top: 10px;
+        //padding-top: 10px;
     }
     .header__burger-acordeon.open .header__burger-acordeon-body{
-        padding-top: 10px;
+        //padding-top: 10px;
     }
     .header__burger-title{
         font-size: 18px;
@@ -608,10 +605,18 @@
     .hear__boxes{
         justify-content: center;
     }
+    .hear__btn{
+        width: 100%;
+    }
 }
 @media(max-width: 1060px){
 }
 @media(max-width: 950px){
+    .top.qr-boss{
+        .top__img{
+            min-width: 100%;
+        }
+    }
     .hear__inner{
         background-image: none;
         padding: 0;
@@ -1484,6 +1489,107 @@ h2.cards__title{
     }
 }
 
+@media(max-width: 1215px){
+    .partners{
+        &__inner{
+            max-width: 770px;
+            margin: 0 auto;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        }
+        &__inner-2{
+            max-width: 770px;
+            margin: 30px auto;
+            margin-bottom: 0;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+        }
+        &__item{
+            & img{}
+            max-width: 170px;
+        }
+    }
+}
+
+
+@media(max-width: 950px){
+    .contact__inner{
+        margin-top: 0;
+    }
+    .partners__inner .slick-slide {
+        margin: 0 7.5px; /* Это создаст отступ в 15px между слайдами */
+    }
+
+    .partners__inner-2 .slick-slide {
+        margin: 0 7.5px; /* Это создаст отступ в 15px между слайдами */
+    }
+    .partners{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        &__title{
+            font-size: 25px;
+            text-align: left;
+            line-height: 30px;
+        }
+        &__inner{
+            display: flex;
+            max-width: 100%;
+            margin: 0;
+        }
+        &__inner-2{
+            display: flex;
+            max-width: 100%;
+            margin: 0;
+            margin-top: 30px;
+        }
+        &__item{
+            & img{
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1135px){
+    .top.qr-boss{
+        .top__box:first-child{
+            max-width: 500px;
+        }
+    }
+}
+
+@media(max-width: 1025px){
+    .top.qr-boss{
+        .top__box:first-child{
+            max-width: 450px;
+        }
+        .top__box-logo{
+            & img{
+                max-width: 200px;
+            }
+        }
+    }
+}
+@media(max-width: 975px){
+    .top.qr-boss{
+        .top__box{
+            margin-right: 15px;
+        }
+    }
+}
+
+
+
+@media(max-width: 500px){
+    .partners{
+        &__inner-2{
+            margin-top: 15px;
+        }
+        &__item{
+            & img{
+                max-height: 101px;
+            }
+        }
+    }
+}
 
 
 @media(max-width: 950px){

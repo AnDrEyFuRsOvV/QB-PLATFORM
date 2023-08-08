@@ -1,0 +1,73 @@
+
+//  DESIGN-ACCARDEON style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.design-acardeon {
+    margin-bottom: 100px;
+    height: 786px;
+    &__main-img{
+        max-width: 945px;
+        width: 100%;
+        position: absolute;
+        right: 0;
+    }
+    &__box{
+        display: flex;
+        justify-content: start;
+        width: 1170px;
+    }
+    display: flex;
+    justify-content: right;
+    background-color: $white-gray;
+    &__inner {
+        margin-top: 50px;
+        max-width: 570px;
+        width: 100%;
+        margin-right: 30px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        max-width: 444px;
+    }
+    &__buttons {
+    }
+    &__wrapper {
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    &__content{
+        display: flex;
+        align-items: center;
+    }
+    &__button {
+        background-color: $white-color;
+        padding: 15px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:first-child{
+            margin-top: 0;
+        }
+    }
+    &__number {
+        @include text-style($orange-color, 24px, 29px, 700);
+        margin-right: 10px;
+    }
+    &__button-title {
+        @include text-style($dark-color, 20px, 26px, 700);
+    }
+    &__arrow {
+    }
+    &__text-box {
+        padding: 30px 15px 20px;
+    }
+    &__text {
+        @include text-style($dark-color, 16px, 27px, 500);
+    }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------  DESIGN-ACCARDEONstyle end

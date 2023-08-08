@@ -1,0 +1,57 @@
+
+//  MISSION style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.mission {
+  &__box {
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    margin-bottom: 35px;
+    max-width: 836px;
+  }
+  &__box-title {
+    @include text-style($orange-color, 34px, 36px, 700);
+    margin-bottom: 10px;
+  }
+  &__box-descr {
+    @include text-style($dark-color, 16px, 20px, 500);
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    max-width: 570px;
+  }
+  &__item {
+    max-width: 570px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+    background-color: #fff;
+    margin-left: 30px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: url(/images/mission/mission-arrow.svg);
+      top: -240px;
+      left: -69px;
+    }
+  }
+  &__item-title {
+    @include text-style($orange-color, 34px, 36px, 700);
+    margin-bottom: 10px;
+  }
+  &__item-descr {
+    @include text-style($dark-color, 16px, 20px, 500);
+  }
+  &__item-btn{
+    width: 370px;
+    margin-top: 10px;
+  }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- MISSION style end

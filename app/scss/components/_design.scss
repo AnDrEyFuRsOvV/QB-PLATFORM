@@ -1,0 +1,52 @@
+
+
+//  Design style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.design-block.bottom-zero{
+  padding-bottom: 100px;
+  padding-top: 50px;
+  .design-block__box{
+    bottom: 0;
+  }
+}
+
+.design-block {
+  padding-bottom: 130px;
+  &__inner {
+    position: relative;
+  }
+  &__img {
+    &.mobile{
+      display: none;
+    }
+    width: 100%;
+  }
+  &__box {
+    position: absolute;
+    bottom: 57px;
+    max-width: 597px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: $white-color;
+    box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+  }
+  &__box-title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &__box-descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+  }
+  &__box-btn {
+    display: block;
+    width: 234px;
+    margin-top: 20px;
+  }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- Design style end

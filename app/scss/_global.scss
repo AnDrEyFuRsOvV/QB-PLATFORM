@@ -101,3 +101,23 @@ body {
         background-color: $active-btn-standart;
     }
 }
+input{
+	border-radius: 1000px !important;
+}
+
+.icons-paralax{
+	position: relative;
+	z-index: 10;
+}
+
+.phone-top{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	z-index: 0;
+}
+
+.typed-cursor{
+	color: $orange-color;
+}

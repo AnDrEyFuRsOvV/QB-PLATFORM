@@ -1,0 +1,118 @@
+// Footer style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.footer {
+  background-color: $dark-color ;
+  padding-top: 100px;
+  padding-bottom: 22px;
+  &__logo{
+    max-width: 155px;
+  }
+  &__boxes {
+    display: flex;
+  }
+  &__box {
+    margin-right: 65px;
+    &:first-child{
+      max-width: 270px;
+    }
+    &:last-child{
+      max-width: 850px;
+      margin-right: 0;
+    }
+  }
+  &__logo {
+    min-width: 155px;
+    margin-bottom: 25px;
+  }
+  &__descr {
+    @include text-style($white-color, 16px, 20px, 500);
+    & span{
+      @include text-style($white-color, 16px, 20px, 700);
+    }
+  }
+  &__copypast {
+    @include text-style($white-color, 16px, 20px, 500);
+    margin-top: 0px;
+  }
+  &__links-title {
+    @include text-style($white-color, 16px, 20px, 500);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__img {
+    margin-right: 10px;
+  }
+  &__link {
+    @include text-style($white-color, 16px, 20px, 500);
+  }
+  &__bottom {
+    max-width: 1170px;
+    margin-top: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+
+  }
+  &__item-text {
+    @include text-style($white-color, 16px, 20px, 500);
+    cursor: pointer;
+    &.active{
+      margin-right: 90px;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        color :$orange-color;
+        transition: all .3s;
+      }
+    }
+  }
+}
+.footer.menu-open{
+  display: none;
+}
+
+.footer__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.footer__item-2 {
+  max-width: 298px;
+}
+.footer__item-text-2 {
+  @include text-style($white-color, 16px, 27px, 500);
+}
+.footer__link-2 {
+  display: block;
+  @include text-style($white-color, 16px, 27px, 500);
+  margin-bottom: 5px;
+}
+.footer__item-social {
+  @include text-style($white-color, 16px, 27px, 500);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.footer__item-social-img {
+  margin-right: 5px;
+}
+.footer__links {
+}
+.footer__img {
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------Footer style end

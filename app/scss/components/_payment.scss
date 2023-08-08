@@ -1,0 +1,102 @@
+
+
+//  PAYMENT style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.payment {
+  &__title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__img {
+    max-width: 570px;
+    margin-right: 30px;
+  }
+  &__list {
+    max-width: 570px;
+  }
+  &__list-item {
+    margin-bottom: 70px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &:nth-child(1){
+      .payment__list-number{
+        padding: 5.5px 22px;
+      }
+    }
+    &:nth-child(2){
+      .payment__list-number{
+        padding: 5.5px 18px;
+      }
+    }
+    &:nth-child(3){
+      .payment__list-number{
+        padding: 5.5px 18px;
+      }
+    }
+    &:nth-child(4){
+      .payment__list-number{
+        padding: 5.5px 16.5px;
+      }
+    }
+  }
+  &__list-box{
+    display: flex;
+    align-items: center;
+  }
+  &__list-number {
+    @include text-style($white-color, 40px, 49px, 700);
+    display: block;
+    text-align: center;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 94, 19, 0.40), 4px 4px 15px 0px rgba(255, 255, 255, 0.20) inset;
+    background: linear-gradient(115deg, #FF5B29 0%, #FFA917 100%);
+    padding: 10px;
+  }
+  &__list-text {
+    @include text-style($dark-color, 16px, 27px, 500);
+
+    margin-left: 15px;
+  }
+  &__list-images {
+    margin-left: 75px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  &__list-img {
+    max-width: 65px;
+    width: 100%;
+    filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.10));
+    margin-left: 10px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  &__list-img2 {
+    width: 100%;
+    filter: drop-shadow(0px 7px 10px rgba(0, 0, 0, 0.10));
+    margin-left: 10px;
+    &:nth-child(1){
+      max-width: 135px;
+      margin-left: 0;
+    }
+    &:nth-child(2){
+      max-width: 112px;
+    }
+    &:nth-child(3){
+      max-width: 128px;
+    }
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- PAYMENT style end

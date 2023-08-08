@@ -1,0 +1,227 @@
+// Top    style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+
+.top {
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  &__box {
+    &.index{
+      max-width: 552px;
+      margin-right: 0;
+    }
+    & img{
+      //width: 100%;
+    }
+    margin-right: 30px;
+    max-width: 570px;
+    &:nth-child(2){
+      margin-right: 0;
+    }
+  }
+  &__title {
+    @include text-style($orange-color, 42px, 51px, 700);
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    @include text-style($orange-color, 24px, 29px, 600);
+    margin-bottom: 20px;
+  }
+  &__description {
+    @include text-style($dark-color, 16px, 27px, 500);
+    margin-bottom: 35px;
+    margin-top: 20px;
+  }
+  &__bold {
+    @include text-style($dark-color, 16px, 20px, 700);
+  }
+  &__input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: $white-gray;
+    border-radius: 15px;
+    padding: 25px 255px 25px 20px ;
+    width: 439px;
+    transition: all .3s;
+    @include text-style($dark-color, 16px, 20px, 400);
+    cursor: text;
+    &:hover{
+      background: $white-color;
+      outline: 1px solid $orange-color;
+    }
+    &:focus{
+      background: $white-color;
+      outline: 1px solid $orange-color;
+      caret-color: $orange-color;
+    }
+  }
+  &__form{
+    position: relative;
+  }
+  &__btn {
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 10px;
+    right: 123px;
+    max-width: 145px;
+    width: 100%;
+  }
+  &__form-descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+    margin-top: 10px;
+  }
+  &__img {
+    max-width: 570px;
+    width: 100%;
+    min-width: 370px;
+  }
+  &__form.mobile {
+    display: none;
+  }
+  &__form-descr.mobile{
+    display: none;
+  }
+  &__box-logo{
+    margin-bottom: 30px;
+  }
+}
+
+.top.design{
+  .top__inner {
+    padding-top: 145px;
+    padding-bottom: 50px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+
+.top.e-commerce-web{
+  .top__inner {
+    padding-top: 145px;
+  }
+}
+
+.top.e-commerce{
+  .top__inner {
+    padding-top: 145px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+
+.top.marketing{
+  .top__inner{
+    padding-top: 145px;
+  }
+}
+
+.top.horeca-mobile{
+  .top__inner{
+    padding-top: 113px;
+  }
+}
+
+.top.top__qr-code{
+  .top__img{
+    min-width: 450px;
+  }
+  .top__btn{
+    right: 142px;
+  }
+  .top__inner{
+    padding-top: 173px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+.top.index{
+  overflow-x: hidden;
+  .top__inner{
+    padding-top: 143px;
+  }
+}
+.top.qr-boss{
+  .top__img{
+    min-width: 450px;
+  }
+  .top__btn{
+    right: 142px;
+  }
+  .top__inner{
+    padding-top: 173px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+
+.top__btn-mobile{
+  max-width: none;
+  margin-top: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.top.horeca-waiter{
+  .top__inner{
+    padding-top: 155px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+
+.top.horeca{
+  .top__inner{
+    padding-top: 120px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+
+.top.horeca-cofee{
+  .top__inner{
+    padding-top: 145px;
+  }
+}
+
+.top.horeca-menu{
+  .top__inner{
+    padding-top: 145px;
+  }
+  .top__title{
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------Top style end
+
+
+
+.top__description{
+  margin-top: 20px;
+}
+.top__box{
+  position: relative;
+}
+
+.top__img.big-img{
+  width: 800px!important;
+  max-width: 800px!important;
+}

@@ -1,0 +1,76 @@
+
+// qr-code style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.qr-code {
+    background-image: url(/images/qr-code/qr-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 589px;
+    margin-top: 113px;
+    &__inner {
+        height: 483px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        max-width: 470px;
+        margin-top: -114px;
+    }
+    &__content {
+        margin-left: 27px;
+        max-width: 570px;
+    }
+    &__title {
+        @include text-style($orange-color, 34px, 41px, 700);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    &__descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        @include text-style($orange-color, 24px, 29px, 700);
+        text-transform: uppercase;
+    }
+    &__subdescr {
+        @include text-style($dark-color, 16px, 27px, 500);
+        margin-bottom: 15px;
+    }
+    &__btn {
+        display: block;
+        width: 265px;
+    }
+    &__mobile {
+        display: none;
+        margin-top: 15px;
+        text-align: center;
+        position: absolute;
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(50px);
+        bottom: -110px;
+        left: 0;
+        right: 0;
+    }
+    &__mobile-title {
+        margin-top: 20px;
+        @include text-style($orange-color, 20px, 24px, 700);
+        text-transform: uppercase;
+    }
+    &__mobile-descr {
+        @include text-style($dark-color, 16px, 27px, 500);
+        margin-bottom: 15px;
+    }
+    &__mobile-btn {
+        display: block;
+        max-width: 375px;
+        margin: 0px auto;
+    }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------qr-code style end

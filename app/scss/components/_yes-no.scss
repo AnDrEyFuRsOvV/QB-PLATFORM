@@ -1,0 +1,115 @@
+// YES-NO style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+.yes-no {
+  z-index: 200;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  &__title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 83px;
+    margin-bottom: 50px;
+  }
+  &__text {
+    z-index: 900;
+    background: $white-color;
+    box-shadow: 6px 6px 16px rgba($dark-color, 0.28);
+    border-radius: 30px;
+    padding: 81px 30px;
+    margin-right: 30px;
+    max-height: 240px;
+    width: 670px;
+  }
+  &__p {
+    @include text-style($dark-color, 20px, 26px, 700);
+  }
+  &__item-img {
+    max-width: 470px;
+    z-index: 200;
+  }
+  &__sub-title {
+    margin-bottom: 86px;
+    @include text-style($orange-color, 34px, 41px, 700);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__boxes {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  &__box {
+    max-width: 570px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:last-child{
+      margin-right: 0;
+    }
+    &:last-child .yes-no__img-choose{
+      margin-right: auto;
+      margin-left: 0;
+    }
+  }
+  &__img-choose {
+    max-width: 470px;
+    margin-bottom: 180px;
+    position: relative;
+    margin-left: auto;
+  }
+  &__text-descr {
+    background: $white-color;
+    box-shadow: 6px 6px 16px rgba($dark-color, 0.28);
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 32px;
+  }
+  &__text-descr__text {
+    @include text-style($dark-color, 16px, 26px, 500);
+    text-align: center;
+  }
+  &__result {
+    max-width: 451px;
+  }
+  &__works {
+    top: -50px;
+    z-index: 80;
+    width: 344px;
+    position: absolute;
+    background: $white-color;
+    box-shadow: 6px 6px 16px rgba($dark-color, 0.28);
+    border-radius: 30px;
+    padding: 30px;
+  }
+  &__text-works {
+    @include text-style($dark-color, 16px, 27px, 500);
+    text-align: center;
+  }
+  &__arrow{
+    &.left img{
+      left: -64px;
+    }
+    position: relative;
+    & img{
+      position: absolute;
+      top: -170px;
+    }
+  }
+}
+.bg-span {
+  margin-left: 23px;
+  @include text-style($orange-color, 34px, 41px, 700);
+  background-image: url(/images/yes-no/bg-span.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 51px 60px;
+}
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------YES-NO style end

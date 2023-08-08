@@ -1,0 +1,187 @@
+// Cards style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+
+.cards{
+  &__title {
+    @include text-style($orange-color, 32px, 39px, 700);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__wrapper{
+    margin: 0 auto;
+    max-width: 1185px;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px!important;
+    max-width: 1185px;
+  }
+  &__card-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+  &__card {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 15px;
+    position: relative;
+    transition: all .5s;
+    &:nth-child(1){
+      &:hover{
+        .cards__card-title {
+          bottom: 213px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(2){
+      &:hover{
+        .cards__card-title {
+          bottom: 213px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(3){
+      &:hover{
+        .cards__card-title {
+          bottom: 213px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(4){
+      &:hover{
+        .cards__card-title {
+          bottom: 180px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(5){
+      &:hover{
+        .cards__card-title {
+          bottom: 184px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(6){
+      &:hover{
+        .cards__card-title {
+          bottom: 207px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(7){
+      &:hover{
+        .cards__card-title {
+          bottom: 153px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(8){
+      &:hover{
+        .cards__card-title {
+          bottom: 183px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(9){
+      &:hover{
+        .cards__card-title {
+          bottom: 181px;
+        }
+        .cards__card-hovered {
+          opacity: 1;
+        }
+      }
+    }
+    &:hover{
+      .cards__card-hovered {
+        opacity: 1;
+      }
+    }
+  }
+  &__card-title {
+    transition: all .5s;
+    z-index: 800;
+    @include text-style($orange-color, 24px, 29px, 700);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    text-transform: uppercase;
+    max-width: 270px;
+  }
+  &__card-hovered {
+    transition: all .5s;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
+    left: 0;
+    background: linear-gradient(180deg, rgba(15, 15, 16, 0.8) 0%, rgba(15, 15, 16, 0.8) 100%);
+    backdrop-filter: blur(15px);
+  }
+  &__card-descr {
+    max-width: 270px;
+    position: absolute;
+    @include text-style($white-color, 16px, 27px, 700);
+    bottom: 85px;
+    left: 30px;
+  }
+  &__card-arrow-wrap {
+    cursor: pointer;
+    transition: all .4s;
+    position: absolute;
+    margin-top: 10px;
+    bottom: 26px;
+    left: 30px;
+    &:hover{
+      .cards__card-arrow{
+        background-color: $hover-btn-standart;
+      }
+    }
+  }
+  &__card-arrow {
+    transition: all .3s;
+    background-color: $orange-color;
+    border-radius: 10000px;
+    padding: 9.55px 13.36px 9.55px 17.18px;
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------Cards style end

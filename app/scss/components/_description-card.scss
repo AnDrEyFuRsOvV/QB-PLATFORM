@@ -1,0 +1,202 @@
+
+// DESCRIPTION CARD style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.description-card {
+
+  &__inner {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+  }
+  &__card {
+    background-color: $white-gray;
+    border-radius: 30px;
+    max-width: 570px;
+    margin-left: 30px;
+    width: 100%;
+    height: auto;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  &__content {
+    padding: 30px 30px 0px 30px;
+  }
+  &__title {
+    @include text-style($orange-color, 32px, 39px, 700);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__subtitle{
+    @include text-style($orange-color, 24px, 29px, 700);
+    margin-bottom: 20px;
+  }
+  &__descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+  }
+  &__img {
+    max-width: 570px;
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: -3px;
+  }
+  &__btn{
+    width: 370px;
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+  }
+  &.brand{
+    .description-card__card {
+      overflow: hidden;
+    }
+    img.description-card__img{
+      margin-bottom: -12px;
+    }
+  }
+  &.horeca-2{
+    margin-top: 0;
+    &:nth-child(2){
+      .description-card__img{
+        margin: 0 auto;
+      }
+    }
+    .description-card__img.horeca-2{
+      max-width: 491px;
+      max-height: 437px;
+      display: block;
+      margin: 22px auto 0 auto;
+    }
+    .description-card__img.horeca-1{
+      max-width: 437px;
+      display: block;
+      margin: 22px auto 0 auto;
+    }
+  }
+  &.mobile{
+    .description-card__inner{
+      .description-card__card:nth-child(2){
+        .description-card__content{
+          max-width: 545px;
+        }
+      }
+      .description-card__btn{
+        margin-top: 30px;
+      }
+      .description-card__img{
+        margin-top: 0;
+      }
+    }
+
+  }
+  &.horeca{
+    margin-top: 100px;
+    .description-card__subtitle{
+      margin-bottom: 0;
+    }
+    .description-card__title{
+      margin-bottom: 0;
+    }
+    .description-card__content{
+      display: block;
+      margin-bottom: 30px;
+    }
+    .description-card__descr {
+      height: 108px;
+    }
+    .description-card__card:nth-child(2){
+      .description-card__content{
+        .description-card__title{
+        }
+      }
+      .description-card__img{
+        max-width: 548px;
+      }
+    }
+    .description-card__img{
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin: 0 auto;
+    }
+  }
+}
+.description-card__titles{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.description-card{
+  margin-bottom: 100px;
+}
+
+.description-card.horeca-2{
+  .description-card__img{
+    max-width: 437px;
+    display: block;
+    margin: 30px auto 0;
+  }
+  .description-card__img.horeca-3{
+    // margin-top: 37px;
+  }
+  .description-card__content{
+    height: 221px;
+  }
+}
+
+.description-card.horeca-2{
+  .description-card__content{
+    max-width: 533px;
+  }
+}
+
+
+.description-card.mobile{
+  .description-card__img.mobile{
+    max-width: 416px ;
+    display: block;
+    margin: 30px auto 0;
+  }
+  .description-card__img.mobile-1{
+    max-width: 530px ;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.description-card__img.mobile-4{
+  max-width: 562px;
+  display: block;
+  margin: 30px auto 0;
+  max-height: 389px;
+  margin-bottom: 0;
+}
+.description-card.mobile-when{
+  margin-bottom: 30px;
+}
+
+.description-card.qr-code-card{
+  .description-card__card{
+    &:first-child{
+      .description-card__img{
+        max-width: 432px;
+        display: block;
+        margin: 22px auto;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------DESCRIPTION CARD style end
+
+
+
+.component__wrapper{
+  margin-top: 200px;
+  margin-bottom: 100px;
+}

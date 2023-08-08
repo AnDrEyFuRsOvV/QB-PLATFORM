@@ -1,0 +1,176 @@
+
+.popup.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.popup{
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.popup.form.open{
+  visibility: visible;
+  opacity: 1;
+}
+.popup__box.form.open{
+  transform: translateY(0px);
+}
+
+.popup__box.ass{
+  transform: translateY(50px);
+  transition: all .5s;
+}
+
+.popup__box.ass.active{
+  transform: translateY(0px);
+}
+
+.popup__box.form{
+  transform: translateY(50px);
+  transition: all .5s;
+}
+
+.popup.form.open.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup.form.active{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup__btn-2{
+  width: 280px;
+  margin-bottom: 35px;
+}
+
+.popup.form{
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.popup.form .iti.iti--allow-dropdown{
+  margin-top: 15px!important;
+  margin-bottom: 25px!important;
+}
+
+.popup__descr.form{
+  max-width: 280px;
+  margin-bottom: 17px;
+}
+
+input#phone-4 {
+  padding-left: 58px;
+  padding-right: 20px;
+}
+.red-star-2{
+  position: absolute;
+  right: 36px;
+  @include text-style($red, 16px, 27px, 600);
+  top: 25px;
+}
+.red-star{
+  position: absolute;
+  right: 172px;
+  @include text-style($red, 16px, 27px, 600);
+  top: 10px;
+}
+.input__wrap{
+  position: relative;
+  max-width: 280px;
+}
+
+
+.popup-input{
+  transition: all .3s;
+  border: none;
+  outline: none;
+  background-color: $white-gray;
+  border-radius: 10px;
+  cursor: text;
+  padding: 10px 20px;
+  width: 100%;
+  @include text-style($dark-color, 16px, 27px, 400);
+  &::placeholder{
+    @include text-style(rgba($dark-color, 0.5), 16px, 27px, 400);
+  }
+  &:hover{
+    background: $white-color;
+    outline: 1px solid $orange-color;
+  }
+  &:focus{
+    background: $white-color;
+    outline: 1px solid $orange-color;
+    caret-color: $orange-color;
+  }
+}
+
+.popup__form{
+  max-width: 280px;
+}
+
+
+
+
+.popup {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($dark-color, 0.3);
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__box {
+    border-radius: 20px;
+    background-color: $white-color;
+    position: relative;
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .close__btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+  &__logo {
+    margin-top: 45px;
+  }
+  &__descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+    max-width: 216px;
+    margin-bottom: 6px;
+    margin-top: 30px;
+  }
+  &__smile {
+    margin-bottom: 17px;
+  }
+  &__btn {
+    width: 176px;
+    margin-bottom: 35px;
+  }
+}

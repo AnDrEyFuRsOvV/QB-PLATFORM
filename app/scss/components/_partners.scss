@@ -1,0 +1,66 @@
+// Partners style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.partners.without-padding{
+  padding-top: 0;
+}
+
+.partners {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  //&__background{
+  //    position: absolute;
+  //    min-height: 1060px;
+  //    top: 0;
+  //    bottom: 0;
+  //    right: 0;
+  //    left: 0;
+  //    overflow: hidden;
+  //}
+  &__inner {
+    display: grid;
+    //margin: 0 auto;
+    //padding: 0 15px;
+    max-width: 1170px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-gap: 30px;
+  }
+  &__inner-2{
+    margin-top: 30px;
+    display: grid;
+    //margin: 30px auto;
+    //margin-bottom: 0;
+    max-width: 1170px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-gap: 30px;
+  }
+  &__item {
+    & img{
+      max-width: 170px;
+    }
+  }
+  &__title{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 34px;
+    color: $orange-color;
+    line-height: 41px;
+    text-transform: uppercase;
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------Partners style end
+
+
+.partners{
+  margin-bottom: 30px;
+}
+
+.partners {
+  .slick-track {
+    width: 100%;
+  }
+}

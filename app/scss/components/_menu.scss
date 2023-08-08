@@ -1,0 +1,35 @@
+//  MENU style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.menu {
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    max-width: 470px;
+  }
+  &__content {
+    margin-left: 30px;
+  }
+  &__content-box {
+    max-width: 670px;
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__content-title {
+    @include text-style($orange-color, 34px, 36px, 700);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__content-descr {
+    @include text-style($dark-color, 16px, 20px, 500);
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- MENU style end

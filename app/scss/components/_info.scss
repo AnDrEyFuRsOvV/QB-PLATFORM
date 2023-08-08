@@ -1,0 +1,45 @@
+
+//  INFO style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+.info {
+  margin-bottom: 100px;
+  &__inner {
+    margin: 0 auto;
+    & img{
+      max-width: 1170px;
+      width: 100%;
+    }
+  }
+  &__blok{
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    display: flex;
+    border-radius: 30px;
+    background-color: $white-color;
+    box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+  }
+  &__content-box {
+    padding: 30px;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__box-title {
+    @include text-style($orange-color, 24px, 30px, 700);
+    margin-bottom: 5px;
+    text-align: center;
+    max-width: 308px;
+    text-transform: uppercase;
+  }
+  &__content-descr {
+    @include text-style($dark-color, 16px, 20px, 500);
+    text-align: center;
+    max-width: 310px;
+  }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- INFO style end

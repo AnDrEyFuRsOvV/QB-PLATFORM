@@ -1,0 +1,80 @@
+// SEO style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.seo__footer-title{
+  text-align: center;
+}
+
+
+.line{
+  position: absolute;
+  bottom: 80px;
+  max-width: 1050px;
+  padding-right: 50px;
+  width: 100%;
+}
+.seo {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  &__inner {
+    background-image: url(/images/hear/bg-hear.png);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 30px;
+  }
+  &__item {
+    position: relative;
+    padding-bottom: 80px;
+  }
+  &__content {
+    max-width: 538px;
+    margin-left: 35px;
+  }
+  &__title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__description {
+    @include text-style($dark-color, 16px, 27px, 500);
+  }
+  &__img {
+    max-width: 567px;
+  }
+  &__item-title {
+    @include text-style($orange-color, 34px, 41px, 700);
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__boxes {
+    display: flex;
+    align-items: center;
+  }
+  &__box {
+  }
+  &__box-img {
+  }
+  &__box-descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+    text-align: center;
+    margin-top: 10px;
+  }
+  &__footer {
+    margin-top: 67px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__footer-title {
+    text-transform: uppercase;
+    @include text-style($orange-color, 34px, 41px, 700);
+  }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------SEO style end

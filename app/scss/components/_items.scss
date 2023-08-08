@@ -1,0 +1,33 @@
+//  ITEMS style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.items {
+  margin-bottom: 100px;
+  &__title {
+    @include text-style($orange-color, 34px, 34px, 700);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__inner {
+    display: flex;
+  }
+  &__box {
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__img {
+    max-width: 270px;
+  }
+  &__box-title {
+    @include text-style($orange-color, 20px, 24px, 700);
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+  &__box-descr {
+    @include text-style($dark-color, 16px, 20px, 500);
+  }
+}
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- ITEMS style end

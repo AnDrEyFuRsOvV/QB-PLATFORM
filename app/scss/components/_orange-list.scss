@@ -1,0 +1,108 @@
+
+// ORANGE LIST style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+.orange-list {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    margin-right: 70px;
+  }
+  &__title {
+    @include text-style($orange-color, 34px, 36px, 700);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    max-width: 540px;
+  }
+  &__item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 8px;
+  }
+  &__text {
+    @include text-style($dark-color, 16px, 27px, 500);
+    margin-left: 10px;
+    max-width: 506px;
+  }
+  &__img {
+    & img{
+      max-width: 570px;
+    }
+  }
+}
+.description-card.mobile-2{
+  margin-bottom: 0;
+}
+
+.orange-list.web{
+  margin-top: 0;
+}
+
+.orange-list.revers{
+  .orange-list__inner{
+    flex-direction: row-reverse;
+  }
+  .orange-list__content{
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  .orange-list__btn{
+    width: 100%;
+    max-width: 570px;
+    border: none;
+  }
+}
+
+.orange-list.bg-gray {
+  &.revers{
+    .orange-list__content{
+      margin-left: 0;
+      margin-right: 60px;
+    }
+    .orange-list__inner{
+      max-height: 673px;
+      flex-direction: row;
+    }
+    .orange-list__img {
+      margin-top: -257px;
+    }
+  }
+  margin-top: 30px;
+  .orange-list__inner{
+    flex-direction: row-reverse;
+    background-image: url(/images/list/bg-hear.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+  }
+  .orange-list__content{
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  .orange-list__descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+    margin-bottom: 30px;
+  }
+  .orange-list__subtitle {
+    @include text-style($orange-color, 24px, 26px, 700);
+    margin-bottom: 15px;
+  }
+}
+
+
+.orange-list.web{
+  .orange-list__list{
+    max-width: 570px;
+    width: 100%;
+  }
+  .orange-list__content{
+    width: 100%;
+  }
+}
+
+// ----------------------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------ORANGE LIST style end

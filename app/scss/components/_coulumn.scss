@@ -1,0 +1,99 @@
+
+
+//  COULUMN style ----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------
+
+
+.coulumn.telegram{
+  .coulumn__img{
+    max-width: 503px;
+  }
+  .coulumn__img.horeca{
+    max-width: 391px;
+  }
+}
+
+.coulumn.design{
+  margin-top: 0;
+  .coulumn__text-box{
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .coulumn__img{
+    margin-top: 30px;
+  }
+}
+
+img.coulumn__img.e-commerce{
+  max-width: 520px;
+}
+
+img.coulumn__img.design{
+  max-width: 485px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.coulumn__btn{
+  margin-top: 20px;
+  width: 234px;
+  display: block;
+}
+
+.coulumn.horeca{
+  .coulumn__text-box{
+    height: 243px;
+  }
+  .coulumn__text-title{
+    margin-bottom: 20px;
+  }
+  .coulumn__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coulumn__img{
+    margin-top: 30px;
+  }
+}
+
+.coulumn {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    max-width: 570px;
+    width: 100%;
+    margin-right: 30px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__text-box {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 6px 6px 16px 0px rgba(0, 0, 0, 0.28);
+  }
+  &__text-title {
+    @include text-style($orange-color, 34px, 36px, 700);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text-descr {
+    @include text-style($dark-color, 16px, 27px, 500);
+  }
+  &__img {
+    margin-top: 20px;
+    max-width: 570px;
+    width: 100%;
+  }
+}
+
+
+// ----------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------------- COULUMN style end
